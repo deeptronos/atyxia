@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if (debug_macro	!= true){
+	window_set_cursor(noone);
+}
+
 move_speed = 600;
 
 //Each input represents a 90 degree increment - W is 90 (up), A is 180 degrees (left), S is 270 degrees (down), D is 0 degrees (right)
@@ -7,3 +12,20 @@ movement_input[0] = ord("D");
 movement_input[1] = ord("W");
 movement_input[2] = ord("A");
 movement_input[3] = ord("S");
+
+//Hotline Miami-like aiming/crosshair behavior (uses objectOrthoGameplayCrosshair, too)
+camera_zoom = (view_wport[0] / view_hport[0]);
+camera_x = view_xport[0];
+camera_y = view_yport[0];
+
+crosshairMaxDistance = 180;
+
+directionToMouse	= point_direction(x, y, mouse_x, mouse_y);
+distanceToMouse		= point_distance(x, y, mouse_x, mouse_y);
+	//Limits the maximum distance our crosshair can be from the player
+distanceToCrosshair = min(point_distance(x, y, mouse_x, mouse_y), crosshairMaxDistance);
+
+cross_x = x +lengthdir_x(distanceToCrosshair, directionToMouse);
+cross_y = y + lengthdir_y(distanceToCrosshair, directionToMouse);
+
+cross = instance_create_layer(cross_x, cross_y, "instancesUIObjects", objectOrthoGameplayCrosshair);

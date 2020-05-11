@@ -28,4 +28,24 @@ if moving {
 	//Uses a single custom script for movement, and allows us to check for solids 
 	scriptOrthoGameplayPlayerMove(move_speed_this_frame, move_dir);
 }
+
+//Hotline Miami-like aiming/crosshair behavior stuff (Uses objectOrthoGameplayCrosshair)
+
+camera_x = view_xport[0];
+camera_y = view_yport[0];
+
+directionToMouse = point_direction(x, y, mouse_x, mouse_y);
+distanceToMouse = point_distance(x, y, mouse_x, mouse_y);
+	//Limits the maximum distance our crosshair can be from the player
+distanceToCrosshair = min(point_distance(x, y, mouse_x, mouse_y), crosshairMaxDistance);
+
+cross_x = x + lengthdir_x(distanceToCrosshair, directionToMouse);
+cross_y = y + lengthdir_y(distanceToCrosshair, directionToMouse);
+
+if (distanceToMouse > crosshairMaxDistance){
+	//window_mouse_set((cross_x - camera_x) * camera_zoom, (cross_y - camera_y) * camera_zoom);
+}
+
+cross.x = cross_x;
+cross.y = cross_y;
 	
