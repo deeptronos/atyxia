@@ -13,7 +13,7 @@ for (var tX = 0; tX < MAP_W; tX++){
 		//Format: [Sprite, Z]
 		var thisTile = [-1, 0]; //Defaulting to tile -1, ie a blank tile
 		thisTile[TILE.SPRITE] = tileMapData;
-		thisTile[TILE.Z] = irandom(3);
+		thisTile[TILE.Z] = 0;
 		global.theMap[# tX, tY] = thisTile
 	}
 }
