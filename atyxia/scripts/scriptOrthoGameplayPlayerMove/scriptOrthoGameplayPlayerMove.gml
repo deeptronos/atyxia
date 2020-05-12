@@ -1,3 +1,5 @@
+//This script basically just does collision detecting!
+
 var spd = argument0;
 var dir = argument1;
 

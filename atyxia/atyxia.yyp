@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "6e0b9b26-4a01-494f-8d73-2bb0c79a3199",
+            "Value": {
+                "id": "e9be6b3a-40aa-4eef-b76b-8e56952918ed",
+                "resourcePath": "sprites\\spriteFist\\spriteFist.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71b2b86f-88a8-4a0b-a96d-3955df52873b",
             "Value": {
                 "id": "f8b2d9e0-c138-4b32-a116-899a492fefaf",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
+            "Value": {
+                "id": "5b8911b6-482f-43da-be6d-f09709cdc5ea",
+                "resourcePath": "scripts\\scriptOrthoGameplayPlayerHandAiming\\scriptOrthoGameplayPlayerHandAiming.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b3044d08-0c93-4afa-842f-545a0cdfec5a",
             "Value": {
                 "id": "51be1cf4-490e-4aa3-9001-d2809e478b3c",
@@ -172,6 +188,14 @@
                 "id": "70a3ee62-88eb-4657-9a10-ecdaf107c099",
                 "resourcePath": "views\\baaf154a-986e-4918-b44f-3d5d572e5866.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
+            "Value": {
+                "id": "b24cd9c8-f2aa-4b44-b8ae-f05773d7631a",
+                "resourcePath": "scripts\\scriptDrawLocationAxis\\scriptDrawLocationAxis.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -212,6 +236,14 @@
                 "id": "41c2bcdf-542c-4514-a0df-46e01355222e",
                 "resourcePath": "rooms\\roomGameRoomBase\\roomGameRoomBase.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d70cfc6d-cab4-4b62-8222-c41d11d50e0d",
+            "Value": {
+                "id": "3f52c4e8-6ba0-4110-839e-6a9b272b1792",
+                "resourcePath": "sprites\\spriteHeldItemPlaceholder\\spriteHeldItemPlaceholder.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -287,6 +319,14 @@
             }
         },
         {
+            "Key": "f418283e-e490-4acc-85ec-c755cd6f5116",
+            "Value": {
+                "id": "d99a55da-a1c1-4413-8257-be0eebbc9e66",
+                "resourcePath": "objects\\objectOrthoGameplayPlayerHeldItem\\objectOrthoGameplayPlayerHeldItem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "725a225f-b4f7-4b5a-aa6b-870de7096f5c",
@@ -306,7 +346,9 @@
     "script_order": [
         "71b2b86f-88a8-4a0b-a96d-3955df52873b",
         "8d8d78fe-ee3c-4a23-8921-4790621fb2f3",
-        "68a47d7b-54fc-433e-a76c-c175d97bcd0f"
+        "68a47d7b-54fc-433e-a76c-c175d97bcd0f",
+        "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
+        "c6fabd12-59fc-4919-b005-bf2c0c03bf40"
     ],
     "tutorial": ""
 }

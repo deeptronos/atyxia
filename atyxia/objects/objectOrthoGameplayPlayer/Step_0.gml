@@ -2,10 +2,9 @@
 // You can write your code in this editor
 
 
-
+//Smooth movement stuff
 global.seconds_passed = delta_time/1000000;
 var move_speed_this_frame = move_speed * global.seconds_passed;
-//x += move_speed_this_frame;
 
 var move_xinput = 0;
 var move_yinput = 0;
@@ -30,7 +29,6 @@ if moving {
 }
 
 //Hotline Miami-like aiming/crosshair behavior stuff (Uses objectOrthoGameplayCrosshair)
-
 camera_x = view_xport[0];
 camera_y = view_yport[0];
 
@@ -48,4 +46,27 @@ if (distanceToMouse > crosshairMaxDistance){
 
 cross.x = cross_x;
 cross.y = cross_y;
-	
+
+
+//Held Item Code
+distanceToHand = min(point_distance(x, y, mouse_x, mouse_y), handMaxDistance);
+
+hand_x = x + lengthdir_x(distanceToHand, directionToMouse);
+//Divided by two so as to limit vertical movement of hand to give orthographic perspective effect
+hand_y = y + (lengthdir_y(distanceToHand, directionToMouse)/2);
+
+hand.x = hand_x;
+hand.y = hand_y;
+
+//Points hand in appropriate direction relative to player
+if(lengthdir_x(distanceToHand, directionToMouse) < 0){
+
+	hand.image_angle = radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1)));
+	hand.image_xscale = -1;
+}else{
+	hand.image_angle = (radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1))) * -1);
+	hand.image_xscale = 1;
+}
+
+
+scriptOrthoGameplayPlayerHandAiming();	

@@ -20,3 +20,15 @@ xTo = x;
 yTo = y;
 
 scriptResolutionManager();
+
+//Sets antialiasing to 0 and turns on v-sync
+
+if(v_sync == true){
+	display_reset(antialiasing_level, true);
+}
+
+
+//Make sure textures (and sprites) aren't filtered, so that it looks distorted and weird
+if gpu_get_texfilter(){
+    gpu_set_texfilter(false);
+}

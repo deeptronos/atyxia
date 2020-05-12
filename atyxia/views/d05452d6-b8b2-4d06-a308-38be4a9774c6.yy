@@ -6,7 +6,8 @@
     "children": [
         "d0ed7000-181e-4a11-b242-be4086e46208",
         "35a9a534-0a32-42aa-b637-e6bd18697a5e",
-        "e66efd7f-3965-4a73-8504-13428a1987b0"
+        "e66efd7f-3965-4a73-8504-13428a1987b0",
+        "f418283e-e490-4acc-85ec-c755cd6f5116"
     ],
     "filterType": "GMObject",
     "folderName": "groupOrthoGameplay",

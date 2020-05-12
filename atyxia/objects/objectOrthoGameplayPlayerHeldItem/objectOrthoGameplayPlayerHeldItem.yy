@@ -1,8 +1,8 @@
 {
-    "id": "35a9a534-0a32-42aa-b637-e6bd18697a5e",
+    "id": "f418283e-e490-4acc-85ec-c755cd6f5116",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objectOrthoGameplayCrosshair",
+    "name": "objectOrthoGameplayPlayerHeldItem",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3f930e32-80c2-4ba4-b969-013c048d93c6",
+    "spriteId": "6e0b9b26-4a01-494f-8d73-2bb0c79a3199",
     "visible": true
 }

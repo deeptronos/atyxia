@@ -14,7 +14,10 @@ movement_input[2] = ord("A");
 movement_input[3] = ord("S");
 
 //Hotline Miami-like aiming/crosshair behavior (uses objectOrthoGameplayCrosshair, too)
-camera_zoom = (view_wport[0] / view_hport[0]);
+
+	//camera_zoom UNUSED as its only use it to lock the mouse position, 
+	//	but we're just locking the cursor position so things don't get fucky
+//camera_zoom = (view_wport[0] / view_hport[0]);
 camera_x = view_xport[0];
 camera_y = view_yport[0];
 
@@ -25,7 +28,19 @@ distanceToMouse		= point_distance(x, y, mouse_x, mouse_y);
 	//Limits the maximum distance our crosshair can be from the player
 distanceToCrosshair = min(point_distance(x, y, mouse_x, mouse_y), crosshairMaxDistance);
 
-cross_x = x +lengthdir_x(distanceToCrosshair, directionToMouse);
+cross_x = x + lengthdir_x(distanceToCrosshair, directionToMouse);
 cross_y = y + lengthdir_y(distanceToCrosshair, directionToMouse);
 
 cross = instance_create_layer(cross_x, cross_y, "instancesUIObjects", objectOrthoGameplayCrosshair);
+
+
+
+//Held Item code
+handMaxDistance = 65;
+distanceToHand	= min(point_distance(x, y, mouse_x, mouse_y), handMaxDistance);
+
+
+hand_x = x + lengthdir_x(distanceToHand, directionToMouse);
+hand_y = y + lengthdir_y(distanceToHand, directionToMouse);
+
+hand = instance_create_layer(hand_x, hand_y, "Instances", objectOrthoGameplayPlayerHeldItem);
