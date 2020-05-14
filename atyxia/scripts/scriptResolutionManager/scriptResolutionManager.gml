@@ -1,16 +1,16 @@
 //(Despite what it may look like) Makes sure the GUI is sized with the game & window, and aspect ratio is maintained
 
-var screenWidth, screenHeight, gameWidth, gameHeight, aspect, cScale, offSet;
+var screenWidth, screenHeight, cScale, offSet;
 
-gameWidth	= view_wport[0];
-gameHeight	= view_hport[0];
+global.gameWidth	= view_wport[0];
+global.gameHeight	= view_hport[0];
 
-aspect = (gameWidth/gameHeight);
+global.gameAspect = (global.gameWidth/global.gameHeight);
 
 screenHeight = display_get_height();
-screenWidth	 = (screenHeight * aspect);
+screenWidth	 = (screenHeight * global.gameAspect);
 
-cScale = (screenHeight / gameHeight);
+cScale = (screenHeight / global.gameHeight);
 
 offSet = 256;
 //offSet = 1000;

@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "02a9854d-a601-453c-9023-f3bff4ed1988",
+            "Value": {
+                "id": "c93cff21-b540-49c3-848a-458c00df9c60",
+                "resourcePath": "fonts\\fontCrisp12NoAA\\fontCrisp12NoAA.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2e04f687-33e4-442b-87f7-d3cc856eba56",
             "Value": {
                 "id": "3577bc24-e51a-4390-a7a0-324748bcbdfa",
@@ -84,6 +92,14 @@
                 "id": "0be4f47f-81df-4f8a-8165-d60e7dc3c60b",
                 "resourcePath": "views\\4e3fea4b-fa56-4ab5-930a-38d101f41092.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "630829d3-ac64-46a9-ac42-d9c3405974cd",
+            "Value": {
+                "id": "92758193-7e3b-4c01-aa86-4a0cc0744efa",
+                "resourcePath": "sprites\\spriteDialoguePortraits\\spriteDialoguePortraits.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -191,11 +207,27 @@
             }
         },
         {
+            "Key": "c66be20f-779a-4c89-8625-7cf756454254",
+            "Value": {
+                "id": "86045f60-9dd1-49c5-a4c2-bc7be0c420f6",
+                "resourcePath": "objects\\objectTextbox\\objectTextbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
             "Value": {
                 "id": "b24cd9c8-f2aa-4b44-b8ae-f05773d7631a",
                 "resourcePath": "scripts\\scriptDrawLocationAxis\\scriptDrawLocationAxis.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c81a5d61-217a-47b6-bf67-afab3a3a16f0",
+            "Value": {
+                "id": "74b1c27a-9cf8-48c1-a2d5-db153b1f3632",
+                "resourcePath": "views\\c81a5d61-217a-47b6-bf67-afab3a3a16f0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -247,6 +279,14 @@
             }
         },
         {
+            "Key": "d745a167-e9d5-4fcd-a778-0cec95c7c628",
+            "Value": {
+                "id": "669fd9f9-538d-4027-b1ba-35eddba1d016",
+                "resourcePath": "scripts\\scriptDrawRoundRectThickOutline\\scriptDrawRoundRectThickOutline.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e3dc5def-fe27-4329-9fa1-6cdb2ecbed7d",
             "Value": {
                 "id": "3e56ab7f-ca22-4ae0-8c0a-463472a0c8eb",
@@ -268,6 +308,14 @@
                 "id": "539ce80c-cab4-4abc-8c17-987591ba7093",
                 "resourcePath": "sprites\\spriteSquares\\spriteSquares.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eb43c7cd-abdf-4ac0-b8c5-dd6293894475",
+            "Value": {
+                "id": "ef24bdaa-c3e1-4495-98e1-d688e0921716",
+                "resourcePath": "fonts\\fontPirate16noAA\\fontPirate16noAA.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -348,7 +396,8 @@
         "8d8d78fe-ee3c-4a23-8921-4790621fb2f3",
         "68a47d7b-54fc-433e-a76c-c175d97bcd0f",
         "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
-        "c6fabd12-59fc-4919-b005-bf2c0c03bf40"
+        "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
+        "d745a167-e9d5-4fcd-a778-0cec95c7c628"
     ],
     "tutorial": ""
 }
