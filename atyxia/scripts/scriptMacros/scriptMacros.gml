@@ -4,3 +4,5 @@
 #macro default_view_height 540
 #macro v_sync false
 #macro antialiasing_level 0
+
+#macro interact_key ord("E")

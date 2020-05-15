@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "7198d181-4e30-4fd9-a9b9-0371720311da",
+            "Value": {
+                "id": "2b0460b1-6195-453e-affe-87288901d77d",
+                "resourcePath": "sounds\\soundCough\\soundCough.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "71b2b86f-88a8-4a0b-a96d-3955df52873b",
             "Value": {
                 "id": "f8b2d9e0-c138-4b32-a116-899a492fefaf",
@@ -132,6 +140,14 @@
                 "id": "852725f7-9c4b-4470-8439-bfa6b94cc651",
                 "resourcePath": "views\\7a0fd93f-5916-4d0b-9566-0e212c3707ad.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7e52f842-45fb-4ae7-8ec9-7acb898d9567",
+            "Value": {
+                "id": "09e28280-0e47-429b-a9b8-15433816f892",
+                "resourcePath": "scripts\\scriptStringWrap\\scriptStringWrap.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -397,7 +413,8 @@
         "68a47d7b-54fc-433e-a76c-c175d97bcd0f",
         "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
         "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
-        "d745a167-e9d5-4fcd-a778-0cec95c7c628"
+        "d745a167-e9d5-4fcd-a778-0cec95c7c628",
+        "7e52f842-45fb-4ae7-8ec9-7acb898d9567"
     ],
     "tutorial": ""
 }

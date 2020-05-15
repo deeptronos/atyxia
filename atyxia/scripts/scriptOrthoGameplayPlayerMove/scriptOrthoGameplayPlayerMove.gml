@@ -4,7 +4,8 @@ var spd = argument0;
 var dir = argument1;
 
 var xTarget = x + lengthdir_x(spd, dir);
-var yTarget = y + lengthdir_y(spd, dir);
+	//Divide y move speed to enhance ortho perspectiv effects
+var yTarget = y + (lengthdir_y(spd, dir)/1.5);
 
 //Accounts for solids being in our direction of movement. If they arent, we can move!
 if place_free(xTarget, yTarget){

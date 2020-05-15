@@ -29,10 +29,14 @@ portrait_index = 1;
 color_primary = c_silver;
 color_secondary = merge_color(color_primary, c_black, 0.5);
 dialogue_text_color = c_white;
-name_text_color = c_dkgray;
+name_text_color = c_lime;
 font = fontCrisp12NoAA;
 draw_set_font(font);
 
+//Dialogue drawing 
+counter = 0;
+voice = soundCough;
+pause = false;
 
 x_buffer = 12;
 y_buffer = 8;
@@ -44,8 +48,15 @@ name_text_angle = 0;
 dialogue_text_max_width = box_width - portrait_width - (2*x_buffer);
 dialogue_text_height = string_height("M");
 
-//dialogue_text = "Always on the run Facial recognition pandemonium Insulated for the cameras Formulated free in ???? Its a million trolls and a million guns A trillion dead with their red eyes up All we have shown is the cellphones???";
-dialogue_text = "I fall\nA panic shrieking in a static sky\nPerfect for a swan dive\nTerminal velocity for a breakneck suicide\nThere are ways that keep me out of here\nSerrated blades I keep my atmosphere\nMy brain escapes a wasted death\nAm I safe? I will hold my breath"
+dialogue_text[0] = "Always on the run! Facial recognition, pandemonium. Insulated for the cameras! Formulated free in ???? Its a million trolls and a million guns A trillion dead with their red eyes up All we have shown is the cellphones???";
+dialogue_text[1] = " fuck";
+dialogue_text[2] = "this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string?? this is a string??";
 
+//dialogue_text[0] = "I fall\nA panic shrieking in a static sky\nPerfect for a swan dive\nTerminal velocity for a breakneck suicide";
+//dialogue_text[1] = "There are ways that keep me out of here\nSerrated blades I keep my atmosphere\nMy brain escapes a wasted death\nAm I safe? I will hold my breath";
+page = 0;
+dialogue_interact_key = interact_key;	
 name = "Skrillex";
+
+event_perform(ev_other, ev_user1);
 
