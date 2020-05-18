@@ -5,13 +5,17 @@ if (debug_macro	!= true){
 	window_set_cursor(noone);
 }
 
-move_speed = 600;
+move_speed = default_player_move_speed;
+
+
 
 //Each input represents a 90 degree increment - W is 90 (up), A is 180 degrees (left), S is 270 degrees (down), D is 0 degrees (right)
 movement_input[0] = ord("D");
 movement_input[1] = ord("W");
 movement_input[2] = ord("A");
 movement_input[3] = ord("S");
+
+
 
 //Hotline Miami-like aiming/crosshair behavior (uses objectOrthoGameplayCrosshair, too)
 
@@ -44,3 +48,13 @@ hand_x = x + lengthdir_x(distanceToHand, directionToMouse);
 hand_y = y + lengthdir_y(distanceToHand, directionToMouse);
 
 hand = instance_create_layer(hand_x, hand_y, "Instances", objectOrthoGameplayPlayerHeldItem);
+
+//Dialogue Set-up Code
+portrait_index = 1;
+voice = soundDialogueBlip;
+name = "You";
+color_primary = c_aqua;
+
+interact_radius = 16;
+active_textbox = noone;
+can_move = true;

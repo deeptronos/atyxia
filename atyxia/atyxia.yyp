@@ -39,6 +39,22 @@
             }
         },
         {
+            "Key": "0361e266-c623-4ad2-89d3-d081bbb51f36",
+            "Value": {
+                "id": "fef87f84-b083-41ae-ae80-f57e9ef89cf0",
+                "resourcePath": "objects\\objectParent_OrthoNPC\\objectParent_OrthoNPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "17083307-ce54-4980-a904-a4be9849269b",
+            "Value": {
+                "id": "ed8ef218-cd25-4632-8e91-c7b34316f576",
+                "resourcePath": "views\\17083307-ce54-4980-a904-a4be9849269b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2e04f687-33e4-442b-87f7-d3cc856eba56",
             "Value": {
                 "id": "3577bc24-e51a-4390-a7a0-324748bcbdfa",
@@ -52,6 +68,14 @@
                 "id": "e0f540f6-8962-44bc-ba22-88695e44274b",
                 "resourcePath": "views\\30d52873-ed42-4bd4-86b1-c81f0c3f8ce0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "34f3c01c-a4e1-4551-8b9d-e3204810d5a9",
+            "Value": {
+                "id": "66ea179f-0906-4e65-87a5-65eec6e066c6",
+                "resourcePath": "sprites\\sprite3DPlaceholder_2\\sprite3DPlaceholder_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -151,6 +175,14 @@
             }
         },
         {
+            "Key": "8be4c329-bc86-4028-bdb5-dc4682e3cba2",
+            "Value": {
+                "id": "8bad2b33-7067-4110-805e-75857f169d08",
+                "resourcePath": "objects\\objectTemplateNPC_NonCombat\\objectTemplateNPC_NonCombat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8c090545-33b8-4eca-ab10-593395f355e1",
             "Value": {
                 "id": "c4da9593-6f59-4781-ad2c-78f7c961a08c",
@@ -175,11 +207,27 @@
             }
         },
         {
+            "Key": "8fc24756-8294-4fec-acd5-e9787988f0b7",
+            "Value": {
+                "id": "399b7d0c-7c43-489a-9209-005f91e2b358",
+                "resourcePath": "scripts\\scriptCreateTextbox\\scriptCreateTextbox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "91217891-163d-4528-80fb-8b966c8419e6",
             "Value": {
                 "id": "45a28f84-2a64-42cd-b526-706236dc69ab",
                 "resourcePath": "views\\91217891-163d-4528-80fb-8b966c8419e6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "91cb62bb-f007-4a1f-a3e2-ad469c09fc87",
+            "Value": {
+                "id": "87841b24-9427-4810-967c-5d5e60095c0f",
+                "resourcePath": "sounds\\soundDialogueBlip\\soundDialogueBlip.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -199,6 +247,14 @@
             }
         },
         {
+            "Key": "ab32c198-ce55-4ea8-988d-30b3b123dc47",
+            "Value": {
+                "id": "ead7efa7-9d3a-4fd4-8409-1a68169a1da7",
+                "resourcePath": "sprites\\sprite3DNPCPlaceholder\\sprite3DNPCPlaceholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
             "Value": {
                 "id": "5b8911b6-482f-43da-be6d-f09709cdc5ea",
@@ -212,6 +268,14 @@
                 "id": "51be1cf4-490e-4aa3-9001-d2809e478b3c",
                 "resourcePath": "views\\b3044d08-0c93-4afa-842f-545a0cdfec5a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ba6cfe1f-bf8c-4e1c-bae1-cb38abb98781",
+            "Value": {
+                "id": "8a2630a7-e8cc-46ba-b51c-22946ea75c89",
+                "resourcePath": "objects\\objectOrthoDialogueDemo_1\\objectOrthoDialogueDemo_1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -399,6 +463,14 @@
             }
         },
         {
+            "Key": "f5de6bc8-a406-4382-ac94-2321fe0ab542",
+            "Value": {
+                "id": "8a6e0eac-21ac-4ba1-bf72-edf69e70686d",
+                "resourcePath": "objects\\objectOrthoDialogueDemo_2\\objectOrthoDialogueDemo_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fac64626-7f73-406e-8c07-ff730fe0817a",
             "Value": {
                 "id": "d5f546b8-88d4-41bc-b82b-c194df4ba329",
@@ -414,7 +486,8 @@
         "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
         "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
         "d745a167-e9d5-4fcd-a778-0cec95c7c628",
-        "7e52f842-45fb-4ae7-8ec9-7acb898d9567"
+        "7e52f842-45fb-4ae7-8ec9-7acb898d9567",
+        "8fc24756-8294-4fec-acd5-e9787988f0b7"
     ],
     "tutorial": ""
 }

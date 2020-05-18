@@ -1,10 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+input_interact = keyboard_check_pressed(interact_key);
 
-//Smooth movement stuff
+//Smooth movement stuf
 global.seconds_passed = delta_time/1000000;
-var move_speed_this_frame = move_speed * global.seconds_passed;
+var move_speed_this_frame = 0;
+
+if(can_move == true){
+	move_speed_this_frame = move_speed * global.seconds_passed;
+}
 
 var move_xinput = 0;
 var move_yinput = 0;
@@ -60,13 +65,40 @@ hand.y = hand_y;
 
 //Points hand in appropriate direction relative to player
 if(lengthdir_x(distanceToHand, directionToMouse) < 0){
-
-	hand.image_angle = radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1)));
-	hand.image_xscale = -1;
+	hand.image_angle	= radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1)));
+	hand.image_xscale	= -1;
 }else{
-	hand.image_angle = (radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1))) * -1);
-	hand.image_xscale = 1;
+	hand.image_angle	= (radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1))) * -1);
+	hand.image_xscale	= 1;
 }
 
-
 scriptOrthoGameplayPlayerHandAiming();	
+
+//Objects
+
+	//Textbox
+if(input_interact){
+	
+	if(active_textbox == noone){
+
+			//Gets instance within collision area
+		var inst = collision_rectangle(x - interact_radius, y - interact_radius, x + interact_radius, y + interact_radius, objectParent_OrthoNPC, false, false);
+	
+		if(inst != noone){
+				//player cannot move
+			
+			
+			with(inst){
+				var tbox = scriptCreateTextbox(dialogue_text, speakers);
+				can_move = false;
+			}
+			active_textbox = tbox;
+			can_move = false;
+		}
+	} else {
+		if(!instance_exists(active_textbox)){
+			active_textbox = noone;
+		}
+	}
+	
+}

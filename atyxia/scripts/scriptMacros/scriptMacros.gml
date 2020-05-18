@@ -6,3 +6,4 @@
 #macro antialiasing_level 0
 
 #macro interact_key ord("E")
+#macro default_player_move_speed 600

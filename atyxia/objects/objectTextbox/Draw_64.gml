@@ -27,8 +27,9 @@ draw_roundrect_color_ext(namebox_x, namebox_y, (namebox_x + namebox_width), (nam
 //---TEXT
 //Draw Name
 draw_set_halign(fa_center); draw_set_valign(fa_middle);
+gpu_set_blendmode_ext(bm_dest_alpha, bm_subtract);
 draw_text_transformed_color(name_text_x, name_text_y, name, 1.5, 1.5, name_text_angle, color_secondary, color_secondary, color_secondary, color_secondary, 1);
-
+gpu_set_blendmode(bm_normal);
 	//Reset alignment after we're done drawing
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 
@@ -39,7 +40,6 @@ if(!pause and counter < dialogue_str_length){
 	if(counter mod 4 == 0){
 		audio_play_sound(voice, 10, false);
 	}
-	
 	switch(string_char_at(dialogue_text_wrapped, counter)){
 		case ",": 
 			pause = true;

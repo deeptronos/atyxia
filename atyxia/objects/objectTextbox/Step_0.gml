@@ -9,5 +9,9 @@ if(keyboard_check_pressed(dialogue_interact_key)){
 		event_perform(ev_other, ev_user1);
 	}else{
 		instance_destroy();
+		with(objectOrthoGameplayPlayer){
+				//Player can move again once the dialogue is over
+			can_move = true;
+		}
 	}
 }

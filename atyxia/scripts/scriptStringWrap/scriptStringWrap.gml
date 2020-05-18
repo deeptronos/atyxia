@@ -1,11 +1,13 @@
 var str = argument0;
 var max_width = argument1;
-
+show_debug_message(str);
 var str_length = string_length(str);
 var last_space = 1;
 
 var count = 1;
 var substr;
+
+
 
 repeat(str_length){
 	substr = string_copy(str, 1, count);
