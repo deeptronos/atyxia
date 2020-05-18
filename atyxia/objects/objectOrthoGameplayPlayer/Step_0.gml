@@ -87,7 +87,6 @@ if(input_interact){
 		if(inst != noone){
 				//player cannot move
 			
-			
 			with(inst){
 				var tbox = scriptCreateTextbox(dialogue_text, speakers);
 				can_move = false;
@@ -100,5 +99,10 @@ if(input_interact){
 			active_textbox = noone;
 		}
 	}
+	
+}
+
+	//Combat System
+if mouse_check_button_pressed(combat_input_primary){
 	
 }

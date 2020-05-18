@@ -15,7 +15,7 @@ movement_input[1] = ord("W");
 movement_input[2] = ord("A");
 movement_input[3] = ord("S");
 
-
+combat_input_primary = mb_left;
 
 //Hotline Miami-like aiming/crosshair behavior (uses objectOrthoGameplayCrosshair, too)
 

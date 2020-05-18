@@ -1,18 +1,18 @@
 {
-    "id": "35a9a534-0a32-42aa-b637-e6bd18697a5e",
+    "id": "ce456134-6488-458b-bdf1-501e75fcfa93",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objectOrthoGameplayCrosshair",
+    "name": "objectOrthoPlayerDamager",
     "eventList": [
         {
-            "id": "841cdf31-8e7e-4f7e-8d75-50ffd119948b",
+            "id": "81c60b8e-7e71-4f3a-a666-d324a692db56",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "35a9a534-0a32-42aa-b637-e6bd18697a5e"
+            "eventtype": 0,
+            "m_owner": "ce456134-6488-458b-bdf1-501e75fcfa93"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -32,7 +32,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": false,
-    "spriteId": "3f930e32-80c2-4ba4-b969-013c048d93c6",
+    "solid": true,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
