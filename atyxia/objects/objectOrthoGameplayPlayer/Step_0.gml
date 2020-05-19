@@ -104,5 +104,11 @@ if(input_interact){
 
 	//Combat System
 if mouse_check_button_pressed(combat_input_primary){
-	
+	var damager = instance_create_layer(x, y, "Instances", objectOrthoPlayerDamager);
+	with(damager){
+		damage = 100;
+		dir = point_direction(x, y, mouse_x, mouse_y);
+		damagerSpeed = 1055;
+		lifetime = 150;
+	}
 }

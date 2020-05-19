@@ -26,6 +26,4 @@ with(textbox){
 	
 }
 
-
-
 return textbox;
