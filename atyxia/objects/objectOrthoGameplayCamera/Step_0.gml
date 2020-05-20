@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+//scriptResolutionManager();
 //Makes movement between 2 points smoother
 x += (xTo - x)/25;
 y += (yTo - y)/25;

@@ -7,7 +7,7 @@ input_interact = keyboard_check_pressed(interact_key);
 global.seconds_passed = delta_time/1000000;
 var move_speed_this_frame = 0;
 
-if(can_move == true){
+if(player_can_control == true){
 	move_speed_this_frame = move_speed * global.seconds_passed;
 }
 
@@ -17,6 +17,7 @@ var move_yinput = 0;
 for (var i = 0; i < array_length_1d(movement_input); i++){
 	var this_key = movement_input[i];
 	if keyboard_check(this_key){
+		
 		var this_angle = i*90;
 		move_xinput += lengthdir_x(1, this_angle);
 		move_yinput += lengthdir_y(1, this_angle);
@@ -92,23 +93,26 @@ if(input_interact){
 				can_move = false;
 			}
 			active_textbox = tbox;
-			can_move = false;
+			player_can_control = false;
 		}
 	} else {
 		if(!instance_exists(active_textbox)){
 			active_textbox = noone;
+			player_can_control = true;
 		}
 	}
 	
 }
 
 	//Combat System
-if mouse_check_button_pressed(combat_input_primary){
-	var damager = instance_create_layer(x, y, "Instances", objectOrthoPlayerDamager);
-	with(damager){
-		damage = 100;
-		dir = point_direction(x, y, mouse_x, mouse_y);
-		damagerSpeed = 1055;
-		lifetime = 150;
+if(player_can_control == true && mouse_check_button_pressed(combat_input_primary)){
+	//scriptFireDamager(x, y, mouse_x, mouse_y);
+	//scriptFireDamager(x, y, mouse_x, mouse_y, 100, 55, 1000);
+	scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 100, 2);
+}
+if(hp == 0){
+	with(objectOrthoGameControl){
+		event_perform(ev_other, ev_user0);
 	}
 }
+

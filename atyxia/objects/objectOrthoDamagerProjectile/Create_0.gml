@@ -8,5 +8,8 @@ damage = 100;
 dir = 0;
 damagerSpeed = 100;
 lifetime = 100;
+scale = 1;
 
 counter = 0;
+
+parent = noone;

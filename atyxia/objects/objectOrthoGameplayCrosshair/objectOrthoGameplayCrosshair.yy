@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "objectOrthoGameplayCrosshair",
     "eventList": [
-        {
-            "id": "841cdf31-8e7e-4f7e-8d75-50ffd119948b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "35a9a534-0a32-42aa-b637-e6bd18697a5e"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

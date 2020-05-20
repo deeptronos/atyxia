@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "3fa68e6b-8058-4fe0-a887-2fd723e5850a",
+            "Value": {
+                "id": "3b043922-e823-4ecc-980c-f75da431ede9",
+                "resourcePath": "objects\\objectProjecticleCollisionTest\\objectProjecticleCollisionTest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48300a0b-b245-4dbe-bb78-edf916a276df",
             "Value": {
                 "id": "0f4ee248-4318-4f2b-9bb7-3c8b1ddf1557",
@@ -135,11 +143,27 @@
             }
         },
         {
+            "Key": "4e4a69f0-b234-4a91-bce4-738c9b178a15",
+            "Value": {
+                "id": "2ddd7b33-609f-4510-b146-24bdcf637728",
+                "resourcePath": "scripts\\scriptFireDamagerProjectile\\scriptFireDamagerProjectile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "50b2f860-5f21-4744-93fd-e56610aa77a1",
             "Value": {
                 "id": "0407c346-82e1-4f95-acf5-f4f1df84e386",
                 "resourcePath": "sprites\/spriteEnemyPlaceholder_master\/spriteEnemyPlaceholder_master.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ca727c1-82b3-4161-be6e-db51a54b5250",
+            "Value": {
+                "id": "c41198e7-acb0-4d9f-be0c-af1154d27976",
+                "resourcePath": "views\\5ca727c1-82b3-4161-be6e-db51a54b5250.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -156,6 +180,14 @@
                 "id": "70bfacb1-276b-46c4-b30e-8ea12e81d334",
                 "resourcePath": "scripts\/scriptResolutionManager\/scriptResolutionManager.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6d42e443-abb3-45de-872b-a4e234b18a06",
+            "Value": {
+                "id": "3e00ee9a-7c24-4e2f-a0b7-7ba5aaaa8945",
+                "resourcePath": "views\\6d42e443-abb3-45de-872b-a4e234b18a06.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -212,6 +244,14 @@
                 "id": "09e28280-0e47-429b-a9b8-15433816f892",
                 "resourcePath": "scripts\/scriptStringWrap\/scriptStringWrap.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "827cd0a4-aebf-4339-92ae-b410aee0d8e9",
+            "Value": {
+                "id": "cc322f7a-4b54-43ad-a06a-235d849dedd6",
+                "resourcePath": "sprites\\spriteWindowBG_Solid\\spriteWindowBG_Solid.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -343,6 +383,14 @@
             }
         },
         {
+            "Key": "c32ec0e1-7ceb-4b48-8c32-733c85c6998c",
+            "Value": {
+                "id": "e0c40254-f142-4722-87da-47daae340adb",
+                "resourcePath": "sprites\\spriteWindowBG_1\\spriteWindowBG_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c66be20f-779a-4c89-8625-7cf756454254",
             "Value": {
                 "id": "86045f60-9dd1-49c5-a4c2-bc7be0c420f6",
@@ -386,7 +434,7 @@
             "Key": "ce456134-6488-458b-bdf1-501e75fcfa93",
             "Value": {
                 "id": "db79aa2a-b5fb-494a-8c0d-870f81e8806e",
-                "resourcePath": "objects\/objectOrthoPlayerDamager\/objectOrthoPlayerDamager.yy",
+                "resourcePath": "objects\\objectOrthoDamagerProjectile\\objectOrthoDamagerProjectile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -543,6 +591,14 @@
             }
         },
         {
+            "Key": "f3a3eb23-a1a2-499e-af83-9cfcdb9ee34a",
+            "Value": {
+                "id": "93b01143-9c52-4754-b93f-8c2467998553",
+                "resourcePath": "sprites\\spriteWindowBorder_0\\spriteWindowBorder_0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418283e-e490-4acc-85ec-c755cd6f5116",
             "Value": {
                 "id": "d99a55da-a1c1-4413-8257-be0eebbc9e66",
@@ -567,6 +623,22 @@
             }
         },
         {
+            "Key": "f985a675-63e0-4117-8a65-e5249af1114c",
+            "Value": {
+                "id": "e73beeb8-aa6a-48e9-adaa-2b5599644df3",
+                "resourcePath": "objects\\objectOrthoGameControl\\objectOrthoGameControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f9d6c089-37ed-4315-83bb-8567ff588d6b",
+            "Value": {
+                "id": "d39c1111-6fa3-4132-b10f-0e63ada70f31",
+                "resourcePath": "sprites\\spriteWindowBorder_0_Master\\spriteWindowBorder_0_Master.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fac64626-7f73-406e-8c07-ff730fe0817a",
             "Value": {
                 "id": "d5f546b8-88d4-41bc-b82b-c194df4ba329",
@@ -577,13 +649,14 @@
     ],
     "script_order": [
         "71b2b86f-88a8-4a0b-a96d-3955df52873b",
-        "8d8d78fe-ee3c-4a23-8921-4790621fb2f3",
         "68a47d7b-54fc-433e-a76c-c175d97bcd0f",
         "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
         "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
         "d745a167-e9d5-4fcd-a778-0cec95c7c628",
         "7e52f842-45fb-4ae7-8ec9-7acb898d9567",
-        "8fc24756-8294-4fec-acd5-e9787988f0b7"
+        "8d8d78fe-ee3c-4a23-8921-4790621fb2f3",
+        "8fc24756-8294-4fec-acd5-e9787988f0b7",
+        "4e4a69f0-b234-4a91-bce4-738c9b178a15"
     ],
     "tutorial": ""
 }

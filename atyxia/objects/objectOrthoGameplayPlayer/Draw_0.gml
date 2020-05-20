@@ -15,6 +15,4 @@ if debug_macro{
 	draw_line_width(x, y, x, y + lengthdir_y(distanceToHand, directionToMouse), 3);
 	draw_set_color(c_fuchsia);
 	draw_line_width(x, y + lengthdir_y(distanceToHand, directionToMouse), hand_x, y, 3);
-
-
 }

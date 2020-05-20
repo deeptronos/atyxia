@@ -14,8 +14,8 @@ if (debug_macro & (debugMode == "scaling")){
 	draw_rectangle_color(0, 400, 200, GUIHeight, c_silver, c_silver, c_silver, c_silver, false);
 	draw_set_color(c_red);
 	draw_text_ext(0, 420, "GUIWidth: " + string(GUIWidth) + ", GUIHeight: " + string(GUIHeight),12, 190);
-	draw_text(0, 440, "camera:");
-	//draw_text_ext(12, 440, "width: " + string(camera_get_view_width(camera)) + ", height: " + string(camera_get_view_height(camera)), 10, 190);
+	draw_text(0, 540, "camera:");
+	draw_text_ext(12, 540, "width: " + string(camera_get_view_width(camera)) + ", height: " + string(camera_get_view_height(camera)), 10, 190);
 	draw_text(12, 450, "matrix: " + string(matrix_get(matrix_view)));
 	draw_set_alpha(1);
 }

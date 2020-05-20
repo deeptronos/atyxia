@@ -7,3 +7,5 @@ name = "Skrillex";
 
 text = ["I'm busy right now."];
 speakers = [id];
+
+hp = 100;

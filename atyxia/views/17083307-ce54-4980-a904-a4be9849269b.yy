@@ -10,7 +10,7 @@
         "0361e266-c623-4ad2-89d3-d081bbb51f36"
     ],
     "filterType": "GMObject",
-    "folderName": "grouOrthpNPCs",
+    "folderName": "groupOrthoNPCs",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
