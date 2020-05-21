@@ -10,10 +10,10 @@ move_speed = default_player_move_speed;
 hp = default_player_hp;
 
 //Each input represents a 90 degree increment - W is 90 (up), A is 180 degrees (left), S is 270 degrees (down), D is 0 degrees (right)
-movement_input[0] = ord("D");
-movement_input[1] = ord("W");
-movement_input[2] = ord("A");
-movement_input[3] = ord("S");
+movement_input[0] = player_right;
+movement_input[1] = player_up;
+movement_input[2] = player_left;
+movement_input[3] = player_down;
 
 combat_input_primary = primary_player_attack;
 
