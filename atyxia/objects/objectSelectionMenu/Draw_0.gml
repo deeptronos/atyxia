@@ -5,7 +5,7 @@ with(current_camera){
 	follow = cam_targ;
 }
 
-draw_set_font(fontSystemLarge_test);
+draw_set_font(fontTrajanPro3_24_AA);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(color_primary);
@@ -22,7 +22,7 @@ repeat(array_length_1d(choices)){
 	if(current_choice == h){
 		draw_set_alpha(0.5);
 		draw_set_color(color_highlights);
-		draw_text_transformed(menu_x, current_y, choices[h], 4, 1, 0);
+		draw_text_transformed(menu_x, current_y, choices[h], 8, 0.5, 0);
 		draw_set_color(color_primary);
 		draw_set_alpha(1);
 		with(cam_target_object){

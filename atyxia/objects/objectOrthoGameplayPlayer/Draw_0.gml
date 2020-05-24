@@ -16,3 +16,20 @@ if debug_macro{
 	draw_set_color(c_fuchsia);
 	draw_line_width(x, y + lengthdir_y(distanceToHand, directionToMouse), hand_x, y, 3);
 }
+
+//Draws attack sprites, in relation to facing direction/etc
+switch(current_attack){
+	case "swipe":
+		switch(facing){
+			case "left":
+				draw_sprite_ext(spriteSwipeAttack, 3, hand.x, hand.y, 2, 2, 0, c_white, 1);
+				break;
+			case "right":
+				draw_sprite_ext(spriteSwipeAttack, 1, hand.x, hand.y, 2, 2, 0, c_white, 1);
+				break;
+		}
+
+		break;
+	case "jab":
+		break;
+}

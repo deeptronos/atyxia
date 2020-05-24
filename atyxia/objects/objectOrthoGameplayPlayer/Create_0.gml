@@ -9,13 +9,15 @@ move_speed = default_player_move_speed;
 
 hp = default_player_hp;
 
+facing = "none"; 
 //Each input represents a 90 degree increment - W is 90 (up), A is 180 degrees (left), S is 270 degrees (down), D is 0 degrees (right)
 movement_input[0] = player_right;
 movement_input[1] = player_up;
 movement_input[2] = player_left;
 movement_input[3] = player_down;
 
-combat_input_primary = primary_player_attack;
+combat_input_primary	= primary_player_attack;
+combat_input_secondary	= secondary_player_attack;
 
 //Hotline Miami-like aiming/crosshair behavior (uses objectOrthoGameplayCrosshair, too)
 
@@ -58,3 +60,7 @@ color_primary = c_aqua;
 interact_radius = 16;
 active_textbox = noone;
 player_can_control = true;
+
+//Attack Set Up Code
+attacks = ["none", "swipe", "jab"];
+current_attack = attacks[0];

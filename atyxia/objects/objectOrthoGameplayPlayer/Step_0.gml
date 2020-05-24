@@ -68,9 +68,11 @@ hand.y = hand_y;
 if(lengthdir_x(distanceToHand, directionToMouse) < 0){
 	hand.image_angle	= radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1)));
 	hand.image_xscale	= -1;
+	facing				= "left";
 }else{
 	hand.image_angle	= (radtodeg(cos(min((lengthdir_y(distanceToHand, directionToMouse)/distanceToHand), 1))) * -1);
 	hand.image_xscale	= 1;
+	facing				= "right";
 }
 
 scriptOrthoGameplayPlayerHandAiming();	
@@ -105,11 +107,21 @@ if(input_interact){
 }
 
 	//Combat System
-if(player_can_control == true && mouse_check_button_pressed(combat_input_primary)){
-	//scriptFireDamager(x, y, mouse_x, mouse_y);
-	//scriptFireDamager(x, y, mouse_x, mouse_y, 100, 55, 1000);
-	scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 100, 2);
+
+if(player_can_control == true){
+			//LMouse Button Attack
+	if(mouse_check_button_pressed(combat_input_primary)){
+		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 5, 2, 1);
+		current_attack = attacks[1];
+		alarm[0] = 25;
+	}		//RMouse Button Attacks
+	else if(mouse_check_button_pressed(combat_input_secondary)){
+		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 5, 1, 3);
+	}
+	
 }
+
+
 if(hp == 0){
 	with(objectOrthoGameControl){
 		event_perform(ev_other, ev_user0);

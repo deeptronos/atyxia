@@ -1,5 +1,5 @@
-#macro debug_macro true
-#macro debugMode "none"
+#macro debug_macro false
+#macro debugMode "combat"
 #macro debug_visibility "simple"
 #macro default_view_width 960
 #macro default_view_height 540
@@ -8,6 +8,7 @@
 
 //Control
 #macro primary_player_attack mb_left
+#macro secondary_player_attack mb_right
 #macro interact_key ord("E")
 #macro player_up ord("W")
 #macro player_down ord("S")
