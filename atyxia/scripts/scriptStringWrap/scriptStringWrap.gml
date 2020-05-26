@@ -1,6 +1,6 @@
 var str = argument0;
 var max_width = argument1;
-show_debug_message(str);
+//show_debug_message(str);
 var str_length = string_length(str);
 var last_space = 1;
 

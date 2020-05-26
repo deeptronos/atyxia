@@ -1,1 +1,1 @@
-room_goto(roomGameRoomBase);
+room_goto(roomLevelSelect);

@@ -5,6 +5,7 @@
 #macro default_view_height 540
 #macro v_sync false
 #macro antialiasing_level 0
+#macro shaders true
 
 //Control
 #macro primary_player_attack mb_left

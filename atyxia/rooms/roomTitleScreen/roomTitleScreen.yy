@@ -2,13 +2,13 @@
 {
     "name": "roomTitleScreen",
     "id": "f51c51cd-91c6-4f8e-a2d2-4fdd8cd376b7",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "63496aa8-133f-4842-8063-2115aab41155",
-        "a001e99c-ef3f-4734-b869-1d8eb290f0c6"
+        "a001e99c-ef3f-4734-b869-1d8eb290f0c6",
+        "63496aa8-133f-4842-8063-2115aab41155"
     ],
     "IsDnD": false,
     "layers": [
@@ -118,13 +118,39 @@
             "visible": true
         },
         {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Instances_Shaders",
+            "id": "a1c5b6cf-a432-4aef-b103-5efcfb8cf65d",
+            "depth": 400,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Background",
             "id": "3f1de77f-bfd1-4479-bcf0-13c29021b36f",
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
