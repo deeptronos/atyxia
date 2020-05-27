@@ -57,10 +57,13 @@ voice = soundDialogueBlip;
 name = "You";
 color_primary = c_aqua;
 
-interact_radius = 16;
+interact_radius = 64;
 active_textbox = noone;
 player_can_control = true;
 
 //Attack Set Up Code
 attacks = ["none", "swipe", "jab"];
 current_attack = attacks[0];
+
+
+draw_health = true;

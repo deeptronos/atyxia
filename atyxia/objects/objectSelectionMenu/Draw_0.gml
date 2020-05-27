@@ -1,5 +1,6 @@
 /// @description Draw menu
 // You can write your code in this editor
+
 var cam_targ = cam_target_object;
 with(current_camera){
 	follow = cam_targ;
@@ -11,6 +12,11 @@ draw_set_valign(fa_middle);
 draw_set_color(color_primary);
 var v_choice_margin = string_height(choices[0]) * 2;
 
+if shaders //only apply shader if the macro is enabled
+{
+    shader_set(shader);
+    shader_set_uniform_f(upos,0.5,0.51);//x,y
+}
 
 	//Draws highlight behind selected choice
 var h = 0;
@@ -22,7 +28,7 @@ repeat(array_length_1d(choices)){
 	if(current_choice == h){
 		draw_set_alpha(0.5);
 		draw_set_color(color_highlights);
-		draw_text_transformed(menu_x, current_y, choices[h], 8, 0.5, 0);
+		draw_text_transformed(menu_x, current_y, choices[h], 4, 1, 0);
 		draw_set_color(color_primary);
 		draw_set_alpha(1);
 		with(cam_target_object){
@@ -33,6 +39,9 @@ repeat(array_length_1d(choices)){
 
 	h++;
 }
+
+	//Turns off blur shader
+shader_reset();
 
 	//Draws text of all choices:
 var i = 0;

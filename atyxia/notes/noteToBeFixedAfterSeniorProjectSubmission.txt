@@ -1,2 +1,4 @@
-Stuff that is temporary to meet the 28th deadline:
-	
+Things to fix after 28th deadline:
+	* Add actual functionality of spacing argument for scriptStringWiden
+	* sort/organize all my resources
+	* do credits another way? (other than an external "credits.txt" file)

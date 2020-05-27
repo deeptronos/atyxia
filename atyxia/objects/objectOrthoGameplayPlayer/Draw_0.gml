@@ -33,3 +33,8 @@ switch(current_attack){
 	case "jab":
 		break;
 }
+
+	//Draw healthbar
+if(draw_health == true){
+	draw_healthbar(x - sprite_width, y - sprite_height, x + sprite_width,  (y - sprite_height) + 5, hp, c_black, c_red, c_red, 0, true, false);
+}

@@ -113,7 +113,7 @@ if(player_can_control == true){
 	if(mouse_check_button_pressed(combat_input_primary)){
 		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 5, 2, 1);
 		current_attack = attacks[1];
-		alarm[0] = 25;
+		alarm[0] = 10;
 	}		//RMouse Button Attacks
 	else if(mouse_check_button_pressed(combat_input_secondary)){
 		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 5, 1, 3);

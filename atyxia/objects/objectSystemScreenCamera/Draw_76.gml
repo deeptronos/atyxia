@@ -8,26 +8,15 @@
 image_xscale	= window_get_width();
 image_yscale	= window_get_height();
 
-//draw_sprite_tiled(spriteWindowBG_Solid, 0, 0, 0);
-//draw_sprite_tiled(spriteWindowBG_1, 2, 0, 0);
-
 var screen_height = display_get_height();
 var screen_width = display_get_width();
 
 var win_height = window_get_height();
 var win_width = window_get_width();
 
-//win_height/screen_height = x / screen_width
-//screen_width * (win_height/screen_height) = x
-
 var gameplay_area_width = screen_width * (win_height/screen_height);
 
 var margin_x = (win_width - gameplay_area_width)/2;
 
-//show_debug_message(string(gameplay_area_width) + " " + string(win_width));
-//show_debug_message(string(margin_x));
-
-//draw_sprite_tiled_ext(spriteWindowBorder_0, 0, margin_x, sprite_get_width(spriteWindowBorder_0), 1, 1, c_white, 1);
-//draw_sprite_tiled_ext(spriteWindowBorder_0, 0, margin_x, sprite_get_width(spriteWindowBorder_0), 1, 1, c_white, 1);
-draw_sprite_stretched(spriteWindowBorder_0, 0, 0 - margin_x, 0, (margin_x * 2), win_height);
-draw_sprite_stretched(spriteWindowBorder_0, 1, win_width - margin_x, 0, (margin_x * 2), win_height);
+//draw_sprite_stretched(spriteWindowBorder_0, 0, 0 - margin_x, 0, (margin_x * 2), win_height);
+//draw_sprite_stretched(spriteWindowBorder_0, 1, win_width - margin_x, 0, (margin_x * 2), win_height);

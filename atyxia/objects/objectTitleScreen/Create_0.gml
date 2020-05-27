@@ -1,15 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-var start_menu = instance_create_layer(x, y, "instancesUIObjects", objectSelectionMenu);
-with(start_menu){
-	current_camera = objectSystemScreenCamera;
-	choices = ["Play", "Options", "Leave"];
-	choice_actions = [scriptGoToFirstRoom, undefined, scriptExitGame];
-	menu_x = room_width/2;
-	menu_y = room_height/2;
-}
 
-title_color = c_red;
+title_color = c_white;
+subtitle_color = merge_color(title_color, c_black, 0.5);
+highlight_color = c_white;
+
 title_font = fontPoynterOldstyleText;
 draw_set_font(title_font);
 title_x = room_width/2;
@@ -24,7 +19,7 @@ drawn_title = "";
 title_width = string_width(title);
 title_height = string_height(title);
 
-subtitle = "dreams of digital demise act I";
+subtitle = "dreams of digital demise a.I";
 subtitle = scriptStringWiden(subtitle, 0);
 subtitle_counter = 0;
 subtitle_length = string_length(subtitle);
