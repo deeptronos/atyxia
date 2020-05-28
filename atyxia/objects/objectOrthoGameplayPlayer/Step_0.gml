@@ -111,7 +111,7 @@ if(input_interact){
 if(player_can_control == true){
 			//LMouse Button Attack
 	if(mouse_check_button_pressed(combat_input_primary)){
-		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 5, 2, 1);
+		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 8, 3, 1);
 		current_attack = attacks[1];
 		alarm[0] = 10;
 	}		//RMouse Button Attacks
@@ -122,9 +122,13 @@ if(player_can_control == true){
 }
 
 
-if(hp == 0){
-	with(objectOrthoGameControl){
+if(hp <= 0){
+	//with(objectOrthoGameControl){
 		event_perform(ev_other, ev_user0);
-	}
+	//}
 }
 
+//Room Restart:
+if(keyboard_check_pressed(ord("R")))	{
+	room_goto(room);
+}

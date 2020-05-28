@@ -2,3 +2,6 @@ Things to fix after 28th deadline:
 	* Add actual functionality of spacing argument for scriptStringWiden
 	* sort/organize all my resources
 	* do credits another way? (other than an external "credits.txt" file)
+	* Remove level restart with "R" press from player code
+	* Remove "window_center()" from alarm[0] of objectSystemScreenCamera
+	* Change player health representation drawing system

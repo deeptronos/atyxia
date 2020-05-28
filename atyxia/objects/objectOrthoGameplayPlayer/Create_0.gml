@@ -66,4 +66,4 @@ attacks = ["none", "swipe", "jab"];
 current_attack = attacks[0];
 
 
-draw_health = true;
+draw_health = false;

@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "d150b4e0-6ef7-42e2-a4e6-98f5b26335ee",
+            "Value": {
+                "id": "3ff3f679-b3c8-4e59-978c-1f937082c3fa",
+                "resourcePath": "sprites\\spriteTestSolid_2\\spriteTestSolid_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d25f7a8d-6f00-4dfd-902d-71e10beb8ac0",
             "Value": {
                 "id": "41c2bcdf-542c-4514-a0df-46e01355222e",
@@ -1088,13 +1096,13 @@
         }
     ],
     "script_order": [
+        "8d8d78fe-ee3c-4a23-8921-4790621fb2f3",
         "71b2b86f-88a8-4a0b-a96d-3955df52873b",
         "68a47d7b-54fc-433e-a76c-c175d97bcd0f",
         "ae14e0bd-98e3-4ae1-ac2e-0e990811bed1",
         "c6fabd12-59fc-4919-b005-bf2c0c03bf40",
         "d745a167-e9d5-4fcd-a778-0cec95c7c628",
         "7e52f842-45fb-4ae7-8ec9-7acb898d9567",
-        "8d8d78fe-ee3c-4a23-8921-4790621fb2f3",
         "8fc24756-8294-4fec-acd5-e9787988f0b7",
         "4e4a69f0-b234-4a91-bce4-738c9b178a15",
         "8fa4d325-8c9c-4c9f-b264-e9732bf8baf3",

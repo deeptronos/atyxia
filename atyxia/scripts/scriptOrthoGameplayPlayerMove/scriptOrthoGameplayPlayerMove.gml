@@ -25,7 +25,7 @@ else {
 		x = xTarget;
 		y = yTarget;
 		objectOrthoGameplayPlayer.hp -= collide.contact_damage;
-		
+		objectOrthoGameplayPlayer.draw_health = true;
 	} else {
 
 		var sweep_interval = 10;

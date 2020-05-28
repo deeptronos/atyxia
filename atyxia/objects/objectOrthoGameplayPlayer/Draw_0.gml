@@ -36,5 +36,8 @@ switch(current_attack){
 
 	//Draw healthbar
 if(draw_health == true){
+	alarm[1] = 100;
 	draw_healthbar(x - sprite_width, y - sprite_height, x + sprite_width,  (y - sprite_height) + 5, hp, c_black, c_red, c_red, 0, true, false);
+	draw_set_font(fontSystem12);
+	draw_text(x - sprite_width, (y - sprite_height) - 15, "health:");
 }

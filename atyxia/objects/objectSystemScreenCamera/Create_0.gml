@@ -38,3 +38,4 @@ if(v_sync == true){
 if gpu_get_texfilter(){
     gpu_set_texfilter(false);
 }
+alarm[0] = 5;
