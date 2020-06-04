@@ -1,9 +1,14 @@
-/// @description Insert description here
+/// @description
 // You can write your code in this editor
 
-//Telling GMS to draw the sprite, just as it would if there were no draw event 
-draw_sprite(sprite_index, image_index, x, y);
+	//Telling GMS to draw the sprite, just as it would if there were no draw event 
+//draw_sprite(sprite_index, image_index, x, y);
 
+headsprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
+//show_debug_message(string(headsprite_index));
+
+draw_sprite(bodysprite, bodysprite_index, x, y);
+draw_sprite(headsprite, headsprite_index, x, y);
 
 
 if debug_macro{
@@ -17,7 +22,7 @@ if debug_macro{
 	draw_line_width(x, y + lengthdir_y(distanceToHand, directionToMouse), hand_x, y, 3);
 }
 
-//Draws attack sprites, in relation to facing direction/etc
+	//Draws attack sprites, in relation to facing direction/etc
 switch(current_attack){
 	case "swipe":
 		switch(facing){

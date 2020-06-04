@@ -1,4 +1,4 @@
-#macro debug_macro false
+#macro debug_macro false		
 #macro debugMode "combat"
 #macro debug_visibility "simple"
 #macro default_view_width 960

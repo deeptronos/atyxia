@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description 
 // You can write your code in this editor
 
 input_interact = keyboard_check_pressed(interact_key);
@@ -32,6 +32,9 @@ if moving {
 	//y += lengthdir_y(move_speed_this_frame, move_dir);
 	//Uses a single custom script for movement, and allows us to check for solids 
 	scriptOrthoGameplayPlayerMove(move_speed_this_frame, move_dir);
+	
+	//Update body sprite direction only on movement
+	bodysprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
 }
 
 //Hotline Miami-like aiming/crosshair behavior stuff (Uses objectOrthoGameplayCrosshair)

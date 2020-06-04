@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description
 // You can write your code in this editor
 
 if (debug_macro	!= true){
@@ -39,7 +39,15 @@ cross_y = y + lengthdir_y(distanceToCrosshair, directionToMouse);
 
 cross = instance_create_layer(cross_x, cross_y, "instancesUIObjects", objectOrthoGameplayCrosshair);
 
+//Setting up default player sprites
+headsprite							= spriteOrtho3DPlayerTest_head;
+headsprite_index					= 0;
 
+bodysprite							= spriteOrtho3DPlayerTest_body;
+bodysprite_index					= 0;
+
+perspectiveReferenceSprite			= spriteOrtho3DPlayerTest_reference;
+perspectiveReferenceSprite_index	= 0;
 
 //Held Item code
 handMaxDistance = 65;
@@ -64,6 +72,5 @@ player_can_control = true;
 //Attack Set Up Code
 attacks = ["none", "swipe", "jab"];
 current_attack = attacks[0];
-
 
 draw_health = false;
