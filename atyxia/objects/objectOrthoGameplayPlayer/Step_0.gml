@@ -10,7 +10,7 @@ var move_speed_this_frame = 0;
 if(player_can_control == true){
 	move_speed_this_frame = move_speed * global.seconds_passed;
 }
-
+//show_debug_message(string(global.seconds_passed));
 var move_xinput = 0;
 var move_yinput = 0;
 
@@ -33,8 +33,10 @@ if moving {
 	//Uses a single custom script for movement, and allows us to check for solids 
 	scriptOrthoGameplayPlayerMove(move_speed_this_frame, move_dir);
 	
-	//Update body sprite direction only on movement
-	bodysprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
+		//Update body sprite direction only on movement
+	//bodysprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
+	bodysprite_angle = floor(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
+	
 }
 
 //Hotline Miami-like aiming/crosshair behavior stuff (Uses objectOrthoGameplayCrosshair)

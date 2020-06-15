@@ -6,8 +6,12 @@
 
 headsprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
 //show_debug_message(string(headsprite_index));
+show_debug_message(floor(((point_direction(x, y, mouse_x, mouse_y))/360) * 24));
+bodysprite = asset_get_index(animation_to_walk_sprites[bodysprite_angle]);
+
 
 draw_sprite(bodysprite, bodysprite_index, x, y);
+//show_debug_message(sprite_get_texture(bodysprite, bodysprite_index));
 draw_sprite(headsprite, headsprite_index, x, y);
 
 

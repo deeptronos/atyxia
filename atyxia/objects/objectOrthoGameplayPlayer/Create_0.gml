@@ -43,8 +43,50 @@ cross = instance_create_layer(cross_x, cross_y, "instancesUIObjects", objectOrth
 headsprite							= spriteOrtho3DPlayerTest_head;
 headsprite_index					= 0;
 
-bodysprite							= spriteOrtho3DPlayerTest_body;
-bodysprite_index					= 0;
+
+
+bodysprite			= spriteOrtho3DPlayerTest_body_still;
+body_sprite_group	= "groupOrtho3DPlayerTest_RiggedAnimations";
+bodysprite_angle = 0;
+	//An object's different animations are assigned in a 2D array
+		//"Coordinate" A is the name of the group which the different sprites of the animation are stored in.
+		//"Coordinate" B is the textutre group of the animation (string)
+		//"Coordinate" C is the length of the animation in frames (int)
+		//"Coordinate" D is the FPS of the animation (int)
+body_sprite_animations[0,0] = "group_walk_loop";
+body_sprite_animations[0,1] = "texturegroup_walk_loop";
+body_sprite_animations[0,2] = 20;
+body_sprite_animations[0,3] = 10;
+
+body_sprite_animations[1,0] = "group_to_walk";
+body_sprite_animations[1,1] = "texturegroup_to_walk";
+body_sprite_animations[1,2] = 6
+body_sprite_animations[1,3] = 10;
+
+	//Each sprite resource in an animation sprite group is stored in a texturegroup just for that animation,
+		//which means we can get all the sprites in that animation sprite group from the texturegroup!
+animation_walk_loop_sprites_array	= texturegroup_get_sprites(body_sprite_animations[0,1]);
+animation_walk_loop_sprites = [];
+animation_to_walk_sprites_array		= texturegroup_get_sprites(body_sprite_animations[1,1]);
+animation_to_walk_sprites = [];
+
+	//Storing the name of each sprite resource(ie, a group of frames rendered at a specific angle)
+		//in an array so that they can be accessed easier
+		
+for(var i = 0; i < array_length_1d(animation_walk_loop_sprites_array); i++;){
+	sprite_set_offset(animation_walk_loop_sprites_array[i], (sprite_get_width(animation_walk_loop_sprites_array[i]) / 2), (sprite_get_height(animation_walk_loop_sprites_array[i]) / 2));
+	animation_walk_loop_sprites[i] = sprite_get_name(animation_walk_loop_sprites_array[i]);
+}
+for(var i = 0; i < array_length_1d(animation_to_walk_sprites_array); i++;){
+	sprite_set_offset(animation_to_walk_sprites_array[i], (sprite_get_width(animation_to_walk_sprites_array[i]) / 2), (sprite_get_height(animation_to_walk_sprites_array[i]) / 2));
+	animation_to_walk_sprites[i] = sprite_get_name(animation_to_walk_sprites_array[i]);
+	show_debug_message(i);
+	show_debug_message(animation_to_walk_sprites[i]);
+}
+
+show_debug_message(array_length_1d(animation_to_walk_sprites));
+bodysprite_index					= 1;
+
 
 perspectiveReferenceSprite			= spriteOrtho3DPlayerTest_reference;
 perspectiveReferenceSprite_index	= 0;

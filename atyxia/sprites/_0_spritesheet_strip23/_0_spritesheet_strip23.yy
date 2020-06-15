@@ -538,7 +538,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 4,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -546,9 +546,9 @@
     "sepmasks": false,
     "swatchColours": null,
     "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
+    "textureGroupId": "a52b41af-f370-4516-b04f-ee80010aec13",
     "type": 0,
     "width": 96,
-    "xorig": 0,
-    "yorig": 0
+    "xorig": 48,
+    "yorig": 48
 }

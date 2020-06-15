@@ -2,7 +2,7 @@
     "id": "2bed1ce4-e20b-464f-a2de-f54d46a99da2",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spriteOrtho3DPlayerTest_body",
+    "name": "spriteOrtho3DPlayerTest_body_still",
     "For3D": false,
     "HTile": false,
     "VTile": false,

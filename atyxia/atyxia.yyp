@@ -186,7 +186,7 @@
             "Key": "2bed1ce4-e20b-464f-a2de-f54d46a99da2",
             "Value": {
                 "id": "97556532-c508-4b2e-acad-e2d3e6767515",
-                "resourcePath": "sprites\/spriteOrtho3DPlayerTest_body\/spriteOrtho3DPlayerTest_body.yy",
+                "resourcePath": "sprites\/spriteOrtho3DPlayerTest_body_still\/spriteOrtho3DPlayerTest_body_still.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "6c86f8f0-840b-407a-bb0e-49f8362144fa",
+            "Value": {
+                "id": "9fd80869-432e-4134-a8e9-2bbf2a73e92c",
+                "resourcePath": "scripts\/scriptDrawDebugRoomGrid\/scriptDrawDebugRoomGrid.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6d42e443-abb3-45de-872b-a4e234b18a06",
             "Value": {
                 "id": "3e00ee9a-7c24-4e2f-a0b7-7ba5aaaa8945",
@@ -644,6 +652,14 @@
                 "id": "c5193f87-9fbb-4d93-b9aa-c63e7632f8b2",
                 "resourcePath": "views\/7bca7d05-284a-4bd1-aac8-fa891b9abb52.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7c77676b-b7d4-4d11-9db9-1f28eca58baa",
+            "Value": {
+                "id": "755a9fdd-806e-4ab5-bb14-7840f4817f92",
+                "resourcePath": "objects\/objectOrtho3DPlayerTest_controller\/objectOrtho3DPlayerTest_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1563,7 +1579,8 @@
         "308728ac-e9b2-4914-8e79-c5f85d7e54c5",
         "fc354d0b-5edc-4cf0-a2db-8ba319a73e06",
         "a87b7091-aa4c-43c5-8982-54cd5bdb3da8",
-        "b476a9d6-b8db-478b-938e-bb6db247d6cc"
+        "b476a9d6-b8db-478b-938e-bb6db247d6cc",
+        "6c86f8f0-840b-407a-bb0e-49f8362144fa"
     ],
     "tutorial": ""
 }
