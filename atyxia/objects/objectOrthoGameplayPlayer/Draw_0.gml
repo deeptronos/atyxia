@@ -5,26 +5,35 @@
 //draw_sprite(sprite_index, image_index, x, y);
 
 headsprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
-//show_debug_message(string(headsprite_index));
-show_debug_message(floor(((point_direction(x, y, mouse_x, mouse_y))/360) * 24));
-bodysprite = asset_get_index(animation_to_walk_sprites[bodysprite_angle]);
 
+//show_debug_message(floor(((point_direction(x, y, mouse_x, mouse_y))/360) * 24));
 
-draw_sprite(bodysprite, bodysprite_index, x, y);
-//show_debug_message(sprite_get_texture(bodysprite, bodysprite_index));
+if(player_moving == true){
+	bodysprite_current_animation = animation_walk_loop_sprites;
+
+	bodysprite_current_animation_speed = (body_sprite_animations[0,3] / room_speed);
+	
+	if(bodysprite_animation_frame < body_sprite_animations[0,2]){
+		bodysprite_animation_frame += bodysprite_current_animation_speed;
+	}else{
+		bodysprite_animation_frame = 0;
+	}
+	
+}else{
+	
+	bodysprite_current_animation = animation_to_walk_sprites;
+	bodysprite_current_animation_speed = 0;
+	bodysprite_animation_frame = 0
+}
+
+bodysprite = asset_get_index(bodysprite_current_animation[bodysprite_angle]);
+
+//Draw body sprite scaled to 64x64
+draw_sprite_ext(bodysprite, bodysprite_animation_frame, x, y, (64/sprite_get_width(bodysprite)), (64/sprite_get_height(bodysprite)),0, c_white, 1);
+
 draw_sprite(headsprite, headsprite_index, x, y);
 
 
-if debug_macro{
-	scriptDrawLocationAxis(x, y, sprite_index, 1);
-	scriptDrawLocationAxis(hand.x, hand.y, hand.sprite_index, 0);
-	draw_set_color(c_green);
-	draw_line_width(x, y, hand_x, y, 3);
-	draw_set_color(c_blue);
-	draw_line_width(x, y, x, y + lengthdir_y(distanceToHand, directionToMouse), 3);
-	draw_set_color(c_fuchsia);
-	draw_line_width(x, y + lengthdir_y(distanceToHand, directionToMouse), hand_x, y, 3);
-}
 
 	//Draws attack sprites, in relation to facing direction/etc
 switch(current_attack){
@@ -49,4 +58,15 @@ if(draw_health == true){
 	draw_healthbar(x - sprite_width, y - sprite_height, x + sprite_width,  (y - sprite_height) + 5, hp, c_black, c_red, c_red, 0, true, false);
 	draw_set_font(fontSystem12);
 	draw_text(x - sprite_width, (y - sprite_height) - 15, "health:");
+}
+
+if debug_macro{
+	scriptDrawLocationAxis(x, y, sprite_index, 1);
+	scriptDrawLocationAxis(hand.x, hand.y, hand.sprite_index, 0);
+	draw_set_color(c_green);
+	draw_line_width(x, y, hand_x, y, 3);
+	draw_set_color(c_blue);
+	draw_line_width(x, y, x, y + lengthdir_y(distanceToHand, directionToMouse), 3);
+	draw_set_color(c_fuchsia);
+	draw_line_width(x, y + lengthdir_y(distanceToHand, directionToMouse), hand_x, y, 3);
 }

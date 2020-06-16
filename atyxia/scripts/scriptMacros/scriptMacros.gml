@@ -18,5 +18,5 @@
 
 
 //Player Object Properties
-#macro default_player_move_speed 600 
+#macro default_player_move_speed 300 
 #macro default_player_hp 100;

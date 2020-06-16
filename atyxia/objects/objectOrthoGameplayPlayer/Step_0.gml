@@ -34,9 +34,12 @@ if moving {
 	scriptOrthoGameplayPlayerMove(move_speed_this_frame, move_dir);
 	
 		//Update body sprite direction only on movement
-	//bodysprite_index = round(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
-	bodysprite_angle = floor(((point_direction(x, y, mouse_x, mouse_y))/360) * 24);
+			//Base body sprite direction on actual movement direction, not cursor direction
+	bodysprite_angle = (move_dir /360) * 24;
 	
+	player_moving = true;
+}else{
+	player_moving = false;
 }
 
 //Hotline Miami-like aiming/crosshair behavior stuff (Uses objectOrthoGameplayCrosshair)
