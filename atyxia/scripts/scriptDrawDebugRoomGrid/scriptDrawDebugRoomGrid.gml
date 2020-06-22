@@ -7,6 +7,8 @@ if(object_exists(argument0)){
 	exit;
 }
 
+if(debug_macro != true){exit;}
+
 var cam_width	= camera_get_view_width(active_cam);
 var cam_height	= camera_get_view_height(active_cam);
 var GUI_width	= display_get_gui_width();

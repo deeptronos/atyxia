@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "objectOrthoGameplayPlayerHeldItem",
     "eventList": [
-        
+        {
+            "id": "57d304dc-cc83-4bf3-89a8-8805b48c70e9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "f418283e-e490-4acc-85ec-c755cd6f5116"
+        },
+        {
+            "id": "6deeaa30-c516-477a-a358-65d7cdbdbd48",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "f418283e-e490-4acc-85ec-c755cd6f5116"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

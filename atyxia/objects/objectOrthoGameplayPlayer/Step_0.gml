@@ -140,3 +140,5 @@ if(hp <= 0){
 if(keyboard_check_pressed(ord("R")))	{
 	room_goto(room);
 }
+
+depth = clamp(z, -100, 99);	//	clamp to [99 to -100] range to stay within depth region z-tilting shader is applied to!

@@ -6,12 +6,17 @@ if (debug_macro	!= true){
 }
 
 move_speed = default_player_move_speed;
-	//Used for animation (ie, play moving frames if moving, etc)
-player_moving = false;
+	
+player_moving = false;	// used for animation (ie, play moving frames if moving, etc)
 
 hp = default_player_hp;
 
 facing = "none"; 
+
+z = 0;
+
+image_alpha = sprite_height/255;
+
 //Each input represents a 90 degree increment - W is 90 (up), A is 180 degrees (left), S is 270 degrees (down), D is 0 degrees (right)
 movement_input[0] = player_right;
 movement_input[1] = player_up;
@@ -39,7 +44,7 @@ distanceToCrosshair = min(point_distance(x, y, mouse_x, mouse_y), crosshairMaxDi
 cross_x = x + lengthdir_x(distanceToCrosshair, directionToMouse);
 cross_y = y + lengthdir_y(distanceToCrosshair, directionToMouse);
 
-cross = instance_create_layer(cross_x, cross_y, "instancesUIObjects", objectOrthoGameplayCrosshair);
+cross = instance_create_layer(cross_x, cross_y, "ilayer_UIObjects", objectOrthoGameplayCrosshair);
 
 //Setting up default player sprites
 headsprite							= spriteOrtho3DPlayerTest_head;
@@ -76,11 +81,15 @@ show_debug_message(sprite_get_name(animation_walk_loop_sprites_array[0]));
 		//in an array so that they can be accessed easier
 		
 for(var i = 0; i < array_length_1d(animation_walk_loop_sprites_array); i++;){
-	sprite_set_offset(animation_walk_loop_sprites_array[i], (sprite_get_width(animation_walk_loop_sprites_array[i]) / 2), (sprite_get_height(animation_walk_loop_sprites_array[i]) / 2));
+	//sprite_set_offset(animation_walk_loop_sprites_array[i], (sprite_get_width(animation_walk_loop_sprites_array[i]) / 2), (sprite_get_height(animation_walk_loop_sprites_array[i]) / 2));
+	sprite_set_offset(animation_walk_loop_sprites_array[i], sprite_get_width(animation_walk_loop_sprites_array[i]) /2, sprite_get_height(animation_walk_loop_sprites_array[i]));	// corrected to facilitate depth stuff where sprite origin must be bottom center
+//	sprite_set_offset(animation_walk_loop_sprites_array[i], sprite_get_width(animation_walk_loop_sprites_array[i]) /2, 60);	// corrected to facilitate depth stuff where sprite origin must be bottom center
 	animation_walk_loop_sprites[i] = sprite_get_name(animation_walk_loop_sprites_array[i]);
 }
 for(var i = 0; i < array_length_1d(animation_to_walk_sprites_array); i++;){
-	sprite_set_offset(animation_to_walk_sprites_array[i], (sprite_get_width(animation_to_walk_sprites_array[i]) / 2), (sprite_get_height(animation_to_walk_sprites_array[i]) / 2));
+	//sprite_set_offset(animation_to_walk_sprites_array[i], (sprite_get_width(animation_to_walk_sprites_array[i]) / 2), (sprite_get_height(animation_to_walk_sprites_array[i]) / 2));
+	sprite_set_offset(animation_to_walk_sprites_array[i], sprite_get_width(animation_to_walk_sprites_array[i]) /2, sprite_get_height(animation_to_walk_sprites_array[i]));	// corrected to facilitate depth stuff where sprite origin must be bottom center
+	//sprite_set_offset(animation_to_walk_sprites_array[i], sprite_get_width(animation_to_walk_sprites_array[i]) /2, 60);	// corrected to facilitate depth stuff where sprite origin must be bottom center
 	animation_to_walk_sprites[i] = sprite_get_name(animation_to_walk_sprites_array[i]);
 	//show_debug_message(i);
 	//show_debug_message(animation_to_walk_sprites[i]);
@@ -101,7 +110,7 @@ distanceToHand	= min(point_distance(x, y, mouse_x, mouse_y), handMaxDistance);
 hand_x = x + lengthdir_x(distanceToHand, directionToMouse);
 hand_y = y + lengthdir_y(distanceToHand, directionToMouse);
 
-hand = instance_create_layer(hand_x, hand_y, "Instances", objectOrthoGameplayPlayerHeldItem);
+hand = instance_create_layer(hand_x, hand_y, "ilayer_instances", objectOrthoGameplayPlayerHeldItem);
 
 //Dialogue Set-up Code
 portrait_index = 1;
@@ -118,3 +127,6 @@ attacks = ["none", "swipe", "jab"];
 current_attack = attacks[0];
 
 draw_health = false;
+
+//image_alpha = 1;
+//sprite_set_offset(image_index, sprite_get_height(image_index), sprite_get_width(image_index) / 2);
