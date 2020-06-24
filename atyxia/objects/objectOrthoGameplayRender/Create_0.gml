@@ -1,3 +1,4 @@
+/// @desc sets depth of layers, adds rendering script to appropriate layers, tilts sprites by necessary amount
 sprite_index = -1;
 view_enabled = true;
 view_set_visible(0, true);

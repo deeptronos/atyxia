@@ -9,6 +9,7 @@
 /// @arg scale_x The X scale parameter, in terms of the 16x16 original sprite/hitbox size
 /// @arg scale_y The X scale parameter, in terms of the 16x16 original sprite/hitbox size
 var dCaller = object_index;
+var dLayer = layer;
 
 var sX = argument0;
 var sY = argument1;
@@ -22,7 +23,7 @@ var dScale_y = argument8;
 
 var dDir = point_direction(sX, sY, targX, targY);
 
-var damager = instance_create_layer(sX, sY, "Instances", objectOrthoDamagerProjectile);
+var damager = instance_create_layer(sX, sY, dLayer, objectOrthoDamagerProjectile);
 with(damager){
 	damage = dDamage;
 	damagerSpeed = dSpeed;
