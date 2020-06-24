@@ -4,3 +4,4 @@ if debug_macro{
 	draw_set_font(fontDebug16);
 	draw_text(5, 285, s);
 }
+

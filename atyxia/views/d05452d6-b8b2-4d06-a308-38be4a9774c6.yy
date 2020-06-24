@@ -13,7 +13,9 @@
         "f985a675-63e0-4117-8a65-e5249af1114c",
         "ce456134-6488-458b-bdf1-501e75fcfa93",
         "3fa68e6b-8058-4fe0-a887-2fd723e5850a",
-        "9f02dc4a-8d16-4945-be04-ff9b30a33de8"
+        "9f02dc4a-8d16-4945-be04-ff9b30a33de8",
+        "6d4050d5-20bf-4621-89f4-69dab48b0d85",
+        "0b13c51d-6659-494e-a883-d20ded7e8da4"
     ],
     "filterType": "GMObject",
     "folderName": "groupOrthoGameplay",

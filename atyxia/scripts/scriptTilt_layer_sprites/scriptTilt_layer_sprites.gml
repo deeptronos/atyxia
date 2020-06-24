@@ -7,7 +7,9 @@ _layers = ["alayer_terrain_lvl1", "alayer_terrain_lvl2"];
 var i = 0; repeat(array_length_1d(_layers)){
 	var _layer = layer_get_id(_layers[i]);
 	var _all = layer_get_all_elements(_layer);
-	
+	for(var f = 1; f < array_length_1d(_all); f += 1){
+		show_debug_message(sprite_get_name(layer_sprite_get_sprite(_all[f])));
+	} 
 	var j = 0; repeat(array_length_1d(_all)){
 		var e = _all[j];
 		
@@ -19,6 +21,7 @@ var i = 0; repeat(array_length_1d(_layers)){
 			
 		}
 		++j;
+		
 	}
 	_all = 0;
 	++i;

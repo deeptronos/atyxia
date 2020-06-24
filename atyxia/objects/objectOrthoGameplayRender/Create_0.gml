@@ -8,11 +8,15 @@ view_set_visible(0, true);
 layer_depth(layer_get_id("blayer"), 100);
 
 layer_depth(layer_get_id("tiles_low"), GCD);			// one tile width (Global Cell-sized) below the ground
-layer_depth(layer_get_id("tiles_lvl1"), 0);				// this is the ground
+layer_depth(layer_get_id("ilayer_environmental_collision"), 2);	//	objects that specify the bounds of the playable area
+layer_depth(layer_get_id("alayer_environment_lvl1"), 3);	// assets for the environment not contained in a tileset (but they aren't tilted, ie. don't react to depth either)
+layer_depth(layer_get_id("tiles_lvl1"), 0);				// this is the ground/tileset environment
 layer_depth(layer_get_id("alayer_terrain_lvl1"), -1);	// assets like trees/grass (ie, terrain) on top
 
+
 layer_depth(layer_get_id("tiles_lvl2"), -GCD);
-layer_depth(layer_get_id("alayer_terrain_lvl2"), -GCD-1);
+layer_depth(layer_get_id("alayer_terrain_lvl2"), -GCD - 1);
+layer_depth(layer_get_id("alayer_environment_lvl2"), -GCD - 2);
 
 layer_depth(layer_get_id("ilayer_controllers"), -1000);
 

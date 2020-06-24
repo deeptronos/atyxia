@@ -28,7 +28,7 @@ if(player_moving == true){
 
 bodysprite = asset_get_index(bodysprite_current_animation[bodysprite_angle]);
 
-sprite_set_offset(image_index, sprite_get_width(image_index) / 2, sprite_get_height(image_index) );
+//sprite_set_offset(image_index, sprite_get_width(image_index) / 2, sprite_get_height(image_index) );	// this is disabled because it would cause issues with other objects being drawn/collision checked (most noticeably objectCollisionGeometry), and it also doens't seem to make any difference with or without it 
 //draw_sprite_ext(sprite_index, image_index, x, y + z, image_xscale, image_yscale, 0, c_white, image_alpha);
 
 //Draw body sprite scaled to 64x64
