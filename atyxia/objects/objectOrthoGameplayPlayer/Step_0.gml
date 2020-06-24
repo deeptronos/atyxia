@@ -42,6 +42,13 @@ if moving {
 	player_moving = false;
 }
 
+if keyboard_check(spacebar){
+	z++;
+}
+if keyboard_check(ord("C")){
+	z--;
+}
+
 //Hotline Miami-like aiming/crosshair behavior stuff (Uses objectOrthoGameplayCrosshair)
 camera_x = view_xport[0];
 camera_y = view_yport[0];

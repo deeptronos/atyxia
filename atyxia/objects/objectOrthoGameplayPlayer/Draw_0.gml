@@ -28,13 +28,13 @@ if(player_moving == true){
 
 bodysprite = asset_get_index(bodysprite_current_animation[bodysprite_angle]);
 
-//sprite_set_offset(image_index, sprite_get_width(image_index) / 2, sprite_get_height(image_index) );
+sprite_set_offset(image_index, sprite_get_width(image_index) / 2, sprite_get_height(image_index) );
 //draw_sprite_ext(sprite_index, image_index, x, y + z, image_xscale, image_yscale, 0, c_white, image_alpha);
 
 //Draw body sprite scaled to 64x64
-draw_sprite_ext(bodysprite, bodysprite_animation_frame, x, y + z , (64/sprite_get_width(bodysprite)), (64/sprite_get_height(bodysprite)),0, c_white, image_alpha);
-
-
+draw_sprite_ext(bodysprite, bodysprite_animation_frame, x, y + z, (64/sprite_get_width(bodysprite)), (64/sprite_get_height(bodysprite)),0, c_white, image_alpha);
+image_alpha = sprite_height/255;
+//draw_sprite_ext(bodysprite, bodysprite_animation_frame, x, y +z , 1, 1,0, c_white, image_alpha);
 draw_sprite_ext(headsprite, headsprite_index, x, y + z , 1, 1, 0, c_white, image_alpha);
 
 
@@ -73,6 +73,8 @@ if debug_macro{
 	draw_line_width(x, y, x, y + lengthdir_y(distanceToHand, directionToMouse), 3);
 	draw_set_color(c_fuchsia);
 	draw_line_width(x, y + lengthdir_y(distanceToHand, directionToMouse), hand_x, y, 3);
+	draw_set_color(c_lime);
+	draw_circle(x, y, 2, false);
 }
-draw_set_color(c_lime);
-draw_circle(x, y, 2, false)
+
+

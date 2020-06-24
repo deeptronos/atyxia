@@ -18,6 +18,7 @@
 #macro player_down ord("S")
 #macro player_left ord("A")
 #macro player_right ord("D")
+#macro spacebar vk_space
 
 
 //Player Object Properties

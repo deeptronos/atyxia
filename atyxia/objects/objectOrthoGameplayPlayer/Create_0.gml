@@ -13,9 +13,10 @@ hp = default_player_hp;
 
 facing = "none"; 
 
-z = 0;
-
+z = 7;	// I am not sure why....but this is what our depth needs to at runtime in order for the player's sprites to appear on level 1 and act with the depth shader properly
+		//	Basically, the z height must be 7 greater than the current level (ie, player's z must be 7 at level 1's z of 0)
 image_alpha = sprite_height/255;
+
 
 //Each input represents a 90 degree increment - W is 90 (up), A is 180 degrees (left), S is 270 degrees (down), D is 0 degrees (right)
 movement_input[0] = player_right;
@@ -85,6 +86,8 @@ for(var i = 0; i < array_length_1d(animation_walk_loop_sprites_array); i++;){
 	sprite_set_offset(animation_walk_loop_sprites_array[i], sprite_get_width(animation_walk_loop_sprites_array[i]) /2, sprite_get_height(animation_walk_loop_sprites_array[i]));	// corrected to facilitate depth stuff where sprite origin must be bottom center
 //	sprite_set_offset(animation_walk_loop_sprites_array[i], sprite_get_width(animation_walk_loop_sprites_array[i]) /2, 60);	// corrected to facilitate depth stuff where sprite origin must be bottom center
 	animation_walk_loop_sprites[i] = sprite_get_name(animation_walk_loop_sprites_array[i]);
+	//show_debug_message(sprite_get_yoffset(animation_walk_loop_sprites_array[i]));
+	//show_debug_message("offset of " + animation_walk_loop_sprites_array[i]+ ": " + sprite_get_xoffset(animation_walk_loop_sprites_array[i]) +", " + sprite_get_yoffset(animation_walk_loop_sprites_array[i]));
 }
 for(var i = 0; i < array_length_1d(animation_to_walk_sprites_array); i++;){
 	//sprite_set_offset(animation_to_walk_sprites_array[i], (sprite_get_width(animation_to_walk_sprites_array[i]) / 2), (sprite_get_height(animation_to_walk_sprites_array[i]) / 2));
@@ -130,3 +133,4 @@ draw_health = false;
 
 //image_alpha = 1;
 //sprite_set_offset(image_index, sprite_get_height(image_index), sprite_get_width(image_index) / 2);
+image_alpha = sprite_height/255;
