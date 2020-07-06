@@ -1,4 +1,4 @@
-/// @description Insert description here
+	/// @description Insert description here
 // You can write your code in this editor
 
 var damager_move_speed_this_frame = damagerSpeed * global.seconds_passed;

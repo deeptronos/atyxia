@@ -13,8 +13,10 @@ hp = default_player_hp;
 
 facing = "none"; 
 
-z = 7;	// I am not sure why....but this is what our depth needs to at runtime in order for the player's sprites to appear on level 1 and act with the depth shader properly
-		//	Basically, the z height must be 7 greater than the current level (ie, player's z must be 7 at level 1's z of 0)
+player_depth_offset = 7;
+z = 0 + player_depth_offset;	// I am not sure why....but this is what our depth needs to at runtime in order for the player's sprites to appear on level 1 and act with the depth shader properly
+								//	Basically, the z height must be 7 greater than the current level (ie, player's z must be 7 at level 1's z of 0)
+
 image_alpha = sprite_height/255;
 
 

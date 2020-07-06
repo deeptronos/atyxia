@@ -11,6 +11,7 @@ var yTarget = y + (lengthdir_y(spd, dir)/2);
 if place_free(xTarget, yTarget){
 	x = xTarget;
 	y = yTarget;
+	
 } 
 	//If place isn't free...
 else {
@@ -26,17 +27,7 @@ else {
 		y = yTarget;
 		objectOrthoGameplayPlayer.hp -= collide.contact_damage;
 		objectOrthoGameplayPlayer.draw_health = true;
-		
-	} else if(variable_instance_exists(collide, "stair_orientation")){
-		show_debug_message("starez");
-		switch stair_orientation{
-			case "vertical":
-				show_debug_message("vertical stair collision");
-				break;
-			case "horizontal":
-				show_debug_message("horizontal stair collision");
-				break;
-		}
+	
 	} else {
 		var sweep_interval = 10;
 		//Checks, in sweep_interval Intervals (ie, 10 degree intervals), if the place we are attempting to go is available or not. Goes up to 80 degrees.

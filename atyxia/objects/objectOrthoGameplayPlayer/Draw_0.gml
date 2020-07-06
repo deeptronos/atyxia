@@ -33,7 +33,7 @@ bodysprite = asset_get_index(bodysprite_current_animation[bodysprite_angle]);
 
 //Draw body sprite scaled to 64x64
 draw_sprite_ext(bodysprite, bodysprite_animation_frame, x, y + z, (64/sprite_get_width(bodysprite)), (64/sprite_get_height(bodysprite)),0, c_white, image_alpha);
-image_alpha = sprite_height/255;
+//image_alpha = sprite_height/255;
 //draw_sprite_ext(bodysprite, bodysprite_animation_frame, x, y +z , 1, 1,0, c_white, image_alpha);
 draw_sprite_ext(headsprite, headsprite_index, x, y + z , 1, 1, 0, c_white, image_alpha);
 

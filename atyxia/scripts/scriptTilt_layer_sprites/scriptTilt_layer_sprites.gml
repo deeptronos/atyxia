@@ -1,8 +1,12 @@
 ///@arg tilt
 ///@arg player_object
+///@arg {string} layer_containing_instances
 var _tilt = argument0;
 var _player = argument1;
-_layers = ["alayer_terrain_lvl1", "alayer_terrain_lvl2"];
+
+var instance_layer = argument2;
+
+_layers = ["alayer_lvl1_terrain", "alayer_lvl2_terrain"];
 
 var i = 0; repeat(array_length_1d(_layers)){
 	var _layer = layer_get_id(_layers[i]);
@@ -27,6 +31,24 @@ var i = 0; repeat(array_length_1d(_layers)){
 	++i;
 }
 
-with(_player){
+with(all){
 	image_alpha = _tilt? sprite_height/255 : 0;
+	//show_debug_message(object_get_name(object_index) + " has been titled");
 }
+
+
+//	Below code to selectively tilt instance sprites, as opposed to tilting "all" of them as we're doing above
+
+//var elements = layer_get_all_elements(instance_layer);
+//var j = 0; repeat(array_length_1d(elements)){
+
+//	var instance = layer_instance_get_instance(elements[j]);
+//	var instance_index = instance.object_index;
+//	var instance_parent = object_get_name(object_get_parent(instance_index));
+//	if instance_parent == "objectParent_OrthoNPC" {
+//		with instance_index
+//	}
+
+//	j++;
+//}
+

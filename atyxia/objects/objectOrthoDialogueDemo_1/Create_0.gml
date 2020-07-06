@@ -1,6 +1,6 @@
 /// @description Setting up dialogue demo code
 event_inherited();
-
+image_alpha = sprite_height/255;
 portrait_index = 2;
 voice = soundCough;
 name = "Pyramid";

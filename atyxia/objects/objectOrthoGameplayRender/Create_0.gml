@@ -2,21 +2,41 @@
 sprite_index = -1;
 view_enabled = true;
 view_set_visible(0, true);
+show_debug_message("GameplayLayerRender");
 
+//	Layer system is as such:
+	//	Layers are used to separate things visually and add depth to a 2D environment. Right now,
+	//		all gameplay takes place in "lvl1", which is at a depth of 0. 
+	//	The player stays here the entire time, and anything they'll ever interact with, 
+	//		depth-wise, will be in lvl1. 
+	//	Below lvl1 is "tiles_low", which is for tiles and things that will always
+	//		be below the player, "blayer", which is the background that'll be drawn.
+	//	Above lvl1 is "ilayer_environmental_collision", which is an instance layer that contains
+	//		gameobjects which denote the boundaries and collisions of the layer. This is used to 
+	//		either keep the player inside the play area, or to stop the player from walking through
+	//		parts of the environment that are supposed to be solid. By default, it is invisible
+	//		so that the player doesn't see them during playtime, but it can be toggled on and off
+	//		in the editor to draw boundaries using "objectCollisionGeometry". 
+	//		There is also "lvl2", which is for visuals that are supposed to at a higher depth ("above
+	//		the player") in the game world. In current implementation, the player never goes to
+	//		this layer and is at a constant depth, so there aren't any interactables here,
+	//		it's just for visual purposes.
+	
+	//	lvl1: where the player is!
 
 // == Shifting Layers == // Depth values are important!!
 layer_depth(layer_get_id("blayer"), 100);
 
 layer_depth(layer_get_id("tiles_low"), GCD);			// one tile width (Global Cell-sized) below the ground
 layer_depth(layer_get_id("ilayer_environmental_collision"), 2);	//	objects that specify the bounds of the playable area
-layer_depth(layer_get_id("alayer_environment_lvl1"), 3);	// assets for the environment not contained in a tileset (but they aren't tilted, ie. don't react to depth either)
+layer_depth(layer_get_id("tiles_lvl1_environment"), 1);	// assets for the environment details from a tileset
 layer_depth(layer_get_id("tiles_lvl1"), 0);				// this is the ground/tileset environment
-layer_depth(layer_get_id("alayer_terrain_lvl1"), -1);	// assets like trees/grass (ie, terrain) on top
+layer_depth(layer_get_id("alayer_lvl1_terrain"), -1);	// assets like trees/grass (ie, terrain) on top
 
 
 layer_depth(layer_get_id("tiles_lvl2"), -GCD);
-layer_depth(layer_get_id("alayer_terrain_lvl2"), -GCD - 1);
-layer_depth(layer_get_id("alayer_environment_lvl2"), -GCD - 2);
+layer_depth(layer_get_id("alayer_lvl2_terrain"), -GCD - 1);
+layer_depth(layer_get_id("tiles_lvl2_environment"), -GCD - 2);
 
 layer_depth(layer_get_id("ilayer_controllers"), -1000);
 
@@ -40,5 +60,5 @@ layer_script_begin(layer_get_id("ilayer_controllers"), scriptRender_layer_master
 
 /// == Tilt Asset Layer Sprites by modifying the alpha channel == //
 tilt = true;
-scriptTilt_layer_sprites(tilt, objectOrthoGameplayPlayer);
+scriptTilt_layer_sprites(tilt, objectOrthoGameplayPlayer, "ilayer_instances");
 alpha_testing = true;

@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "9e8fff00-f0e1-4f26-96ea-bab8bd29fa42"
+        },
+        {
+            "id": "bfff4750-6429-4a10-b327-b8727b48280c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "9e8fff00-f0e1-4f26-96ea-bab8bd29fa42"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -54,6 +64,48 @@
             "resourceFilter": 1023,
             "value": "vertical",
             "varName": "stair_orientation",
+            "varType": 2
+        },
+        {
+            "id": "4d2e3050-8a06-4450-a69d-2227b429ee99",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "north",
+            "varName": "stair_up_direction",
+            "varType": 2
+        },
+        {
+            "id": "f2cf80c2-b2dc-45a9-ad73-71588be61bd2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "tiles_lvl1",
+            "varName": "lower_layer",
+            "varType": 2
+        },
+        {
+            "id": "a4f8c178-4aa3-4497-90ac-7efb81222fa9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "tiles_lvl2",
+            "varName": "upper_layer",
             "varType": 2
         }
     ],
