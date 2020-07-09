@@ -5,7 +5,8 @@
     "name": "7bca7d05-284a-4bd1-aac8-fa891b9abb52",
     "children": [
         "d0ed7000-181e-4a11-b242-be4086e46208",
-        "f418283e-e490-4acc-85ec-c755cd6f5116"
+        "f418283e-e490-4acc-85ec-c755cd6f5116",
+        "09da3469-9e10-4a54-81eb-aad5805ad540"
     ],
     "filterType": "GMObject",
     "folderName": "groupOrthoPlayer",

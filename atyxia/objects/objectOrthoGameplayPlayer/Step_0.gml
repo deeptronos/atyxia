@@ -124,14 +124,20 @@ if(input_interact){
 	//Combat System
 
 if(player_can_control == true){
+	
 			//LMouse Button Attack
 	if(mouse_check_button_pressed(combat_input_primary)){
-		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 8, 3, 1);
-		current_attack = attacks[1];
-		alarm[0] = 10;
-	}		//RMouse Button Attacks
+		//scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 8, 3, 1);
+		show_debug_message(LClick_ability_index);
+		var abilityObject = instance_create_layer(x, y, "ilayer_instances", player_abilities[# LClick_ability_index, 7]);
+		with(abilityObject){
+			ability = objectOrthoGameplayPlayer.player_abilities[# objectOrthoGameplayPlayer.LClick_ability_index, 0]
+		}
+		alarm[0] = (player_abilities[# LClick_ability_index, 5] * global.seconds_passed);	//	Cooldown duration
+
+	}		//RMouse Button Attacks]
 	else if(mouse_check_button_pressed(combat_input_secondary)){
-		scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 5, 1, 3);
+		var abilityObject = instance_create_layer(x, y, "ilayer_instances", player_abilities[# RClick_ability_index, 7]);
 	}
 	
 }

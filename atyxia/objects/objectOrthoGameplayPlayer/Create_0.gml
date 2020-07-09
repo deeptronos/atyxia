@@ -107,7 +107,7 @@ bodysprite_animation_frame	= 0;
 perspectiveReferenceSprite			= spriteOrtho3DPlayerTest_reference;
 perspectiveReferenceSprite_index	= 0;
 
-//Held Item code
+//	Held Item code
 handMaxDistance = 65;
 distanceToHand	= min(point_distance(x, y, mouse_x, mouse_y), handMaxDistance);
 
@@ -117,7 +117,7 @@ hand_y = y + lengthdir_y(distanceToHand, directionToMouse);
 
 hand = instance_create_layer(hand_x, hand_y, "ilayer_instances", objectOrthoGameplayPlayerHeldItem);
 
-//Dialogue Set-up Code
+//	Dialogue Set-up Code
 portrait_index = 1;
 voice = soundDialogueBlip;
 name = "You";
@@ -127,12 +127,56 @@ interact_radius = 64;
 active_textbox = noone;
 player_can_control = true;
 
-//Attack Set Up Code
+//	Attack Set Up Code
 attacks = ["none", "swipe", "jab"];
 current_attack = attacks[0];
 
 draw_health = false;
 
+//	Ability Inventory Set Up Code
+player_can_use_abilities = true;
+
+player_abilities = ds_grid_create(1,1);
+//	abilities ds_grid syntax:
+//		x, 0: Name (String)
+//		x, 1: Inventory Sprite (Sprite Resource String)
+//		x, 2: Description Text (String)
+//		x, 3: Magic Cost (Int)
+//		x, 4: Damage (Int)
+//		x, 5: Cooldown Duration, in ms (Int)
+//		x, 6: Range, as in Size of Damager Hitbox (int)
+//		x, 7: Gameobject Representation
+
+	//	No ability - placeholder if nothing is equipped to slot
+ds_grid_set(player_abilities, 0, 0, "None");
+	
+	//	Swipe - default LClick ability 
+	ds_grid_resize(player_abilities, 3, 8);
+ds_grid_set(player_abilities, 1, 0, "Swipe");
+ds_grid_set(player_abilities, 1, 1, "spriteSwipe_inventory");
+ds_grid_set(player_abilities, 1, 2, "Does a light amount of damage, but is very quick");
+ds_grid_set(player_abilities, 1, 3, 0);
+ds_grid_set(player_abilities, 1, 4, 1);
+ds_grid_set(player_abilities, 1, 5, 1000);
+ds_grid_set(player_abilities, 1, 6, 5);
+ds_grid_set(player_abilities, 1, 7, objectMeleeAbilityParent);
+
+	//	Slam - default RClick ability 
+
+ds_grid_set(player_abilities, 2, 0, "Slam");
+ds_grid_set(player_abilities, 2, 1, "spriteSlam_inventory");
+ds_grid_set(player_abilities, 2, 2, "Does a bit of damage, but takes some time.");
+ds_grid_set(player_abilities, 2, 3, 0);
+ds_grid_set(player_abilities, 2, 4, 2);
+ds_grid_set(player_abilities, 2, 5, 3);
+ds_grid_set(player_abilities, 2, 6, 5);
+ds_grid_set(player_abilities, 2, 7, objectMeleeAbilityParent);
+
+player_gui = instance_create_layer(0, 0, "ilayer_UIObjects", objectOrthoGameplayGUI);
+
+//LClick_ability = player_abilities[# 1, 1];
+LClick_ability_index = 1
+RClick_ability_index = 2
 //image_alpha = 1;
 //sprite_set_offset(image_index, sprite_get_height(image_index), sprite_get_width(image_index) / 2);
 image_alpha = sprite_height/255;
