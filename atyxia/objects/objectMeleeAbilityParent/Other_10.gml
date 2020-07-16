@@ -9,7 +9,7 @@ if collisions > 0{
 		show_debug_message("collision: " +string( _list[|i]));
 		var _col = _list[|i];
 		with(_col){
-			scriptTakeDamage();
+			scriptTakeDamage(other.damage_dealt);
 		}
 		i++;
 	}

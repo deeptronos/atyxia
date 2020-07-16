@@ -7,3 +7,7 @@ enemy_death_tolerance = 0;
 
 contact_damage = 50;
 draw_health = false;
+draw_info = false;
+if(debug_macro){
+	draw_info = true;
+}
