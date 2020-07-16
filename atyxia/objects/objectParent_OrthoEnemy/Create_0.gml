@@ -6,3 +6,4 @@ hp = 100;
 enemy_death_tolerance = 0;
 
 contact_damage = 50;
+draw_health = false;

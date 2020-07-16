@@ -128,11 +128,21 @@ if(player_can_control == true){
 			//LMouse Button Attack
 	if(mouse_check_button_pressed(combat_input_primary)){
 		//scriptFireDamagerProjectile(hand.x, hand.y, mouse_x, mouse_y, 100, 550, 8, 3, 1);
-		show_debug_message(LClick_ability_index);
-		var abilityObject = instance_create_layer(x, y, "ilayer_instances", player_abilities[# LClick_ability_index, 7]);
+		//show_debug_message(LClick_ability_index);
+		abilityDir = point_direction(x, y, cross_x, cross_y);
+		
+		//var abilityObject = instance_create_layer(x + lengthdir_x(100, _dir), y + lengthdir_y(100, _dir), "ilayer_instances", player_abilities[# LClick_ability_index, 7]);	//	Create object specified in "GameObject Representation" field (#7)
+		var abilityObject;
+		abilityObject = instance_create_layer(x, y , "ilayer_instances", player_abilities[# LClick_ability_index, 7]);	//	Create object specified in "GameObject Representation" field (#7)
 		with(abilityObject){
-			ability = objectOrthoGameplayPlayer.player_abilities[# objectOrthoGameplayPlayer.LClick_ability_index, 0]
+			direction = other.abilityDir;
+			ability_rad = 50;
+			ability = objectOrthoGameplayPlayer.player_abilities[# objectOrthoGameplayPlayer.LClick_ability_index, 0]	//	Pass name of ability to newly created object
+			ability_x = x + lengthdir_x(circle_offset, direction);
+			ability_y = y + lengthdir_y(circle_offset, direction);
+			event_user(0);	//	Call user event 0, which checks for collisions
 		}
+		//show_debug_message("ability objecto directione: " + string(abilityObject.direction));
 		alarm[0] = (player_abilities[# LClick_ability_index, 5] * global.seconds_passed);	//	Cooldown duration
 
 	}		//RMouse Button Attacks]
