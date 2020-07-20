@@ -24,10 +24,6 @@ var gameplay_area_width = screen_width * (win_height/screen_height);
 
 var margin_x = (win_width - gameplay_area_width)/2;
 
-//show_debug_message(string(gameplay_area_width) + " " + string(win_width));
-//show_debug_message(string(margin_x));
 
-//draw_sprite_tiled_ext(spriteWindowBorder_0, 0, margin_x, sprite_get_width(spriteWindowBorder_0), 1, 1, c_white, 1);
-//draw_sprite_tiled_ext(spriteWindowBorder_0, 0, margin_x, sprite_get_width(spriteWindowBorder_0), 1, 1, c_white, 1);
 draw_sprite_stretched(spriteWindowBorder_0, 0, 0 - margin_x, 0, (margin_x * 2), win_height);
 draw_sprite_stretched(spriteWindowBorder_0, 1, win_width - margin_x, 0, (margin_x * 2), win_height);

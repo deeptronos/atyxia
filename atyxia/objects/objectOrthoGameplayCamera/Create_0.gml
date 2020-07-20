@@ -5,6 +5,7 @@ z = 20;
 //pitch = -79;
 sprite_index = -1;
 
+
 //setting up room (size must actually be controlled in room settings!)
 room_set_viewport(room, view_current, true, view_xport[view_current], view_yport[view_current], default_view_width, default_view_height);
 //Creating the camera/following the player

@@ -1,4 +1,4 @@
-#macro debug_macro true		
+#macro debug_macro false	
 #macro debugMode "combat"
 #macro debug_visibility "simple"
 

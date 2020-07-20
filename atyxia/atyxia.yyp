@@ -719,6 +719,14 @@
             }
         },
         {
+            "Key": "703836fe-bf4f-426c-a15c-387d1d53f6a3",
+            "Value": {
+                "id": "5a412927-d27e-4c7f-80db-b8c32470cd61",
+                "resourcePath": "scripts\/scriptGoToOrtho3DBase\/scriptGoToOrtho3DBase.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7198d181-4e30-4fd9-a9b9-0371720311da",
             "Value": {
                 "id": "2b0460b1-6195-453e-affe-87288901d77d",
@@ -1809,6 +1817,7 @@
         "32cbf233-5b43-4eeb-9de3-771959ac3030",
         "1375757a-1022-4c2f-b681-acd77764b645",
         "b2f702db-6677-41a2-a979-b463417aea94",
+        "703836fe-bf4f-426c-a15c-387d1d53f6a3",
         "e84e7f66-5fa7-4836-bd4f-9b025482d3d2",
         "308728ac-e9b2-4914-8e79-c5f85d7e54c5",
         "fc354d0b-5edc-4cf0-a2db-8ba319a73e06",

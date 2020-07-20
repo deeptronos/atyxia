@@ -5,6 +5,7 @@ y = 0;
 
 gui_display_aspect = display_get_gui_width()/display_get_gui_height();
 
+
 gui_screen_unit_division = 16;	//	the unit divisor of the total game window/screen's size (eg, 32 = 32 units)
 
 gui_screen_unit_height = round(display_get_gui_height()/gui_screen_unit_division);

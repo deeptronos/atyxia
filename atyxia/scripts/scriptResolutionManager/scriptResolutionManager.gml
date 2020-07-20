@@ -12,6 +12,10 @@ screenWidth	 = (screenHeight * global.gameAspect);
 
 cScale = (screenHeight / global.gameHeight);
 
+global.gameSizeScale = cScale;	//	This value is the factor by which the game surface is scaled up to match window size.
+								//		It is useful for some GUI scaling purposes, such as drawing legible text,
+								//		so it's a global.
+
 global.ScaleOffSet = 256;
 //offSet = 1000;
 if (!window_get_fullscreen()){
@@ -19,3 +23,4 @@ if (!window_get_fullscreen()){
 }
 
 display_set_gui_size(screenWidth, screenHeight);
+show_debug_message("cScale: " + string(cScale));

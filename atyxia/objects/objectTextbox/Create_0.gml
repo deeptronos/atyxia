@@ -22,6 +22,8 @@ page				= 0;
 font				= fontCrisp12NoAA;
 
 	//Scales these values (860 px of 960 px total game width, 120 px of 540 px total game height) to be consistant with actual GUI size 
+//box_width			= (860/global.gameWidth) * display_get_gui_width();
+//box_height			= (135/global.gameHeight) * display_get_gui_height();
 box_width			= (860/global.gameWidth) * display_get_gui_width();
 box_height			= (135/global.gameHeight) * display_get_gui_height();
 box_round_radius	= 5;
