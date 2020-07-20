@@ -93,7 +93,6 @@ if(lengthdir_x(distanceToHand, directionToMouse) < 0){
 scriptOrthoGameplayPlayerHandAiming();	
 
 //Objects
-
 	//Textbox
 if(input_interact){
 	
@@ -120,10 +119,23 @@ if(input_interact){
 	}
 	
 }
-
-	//Combat System
-
+	//Pass info to GUI
+	with(player_gui){
+		L_ability_slot_sprite = other.player_abilities[# other.LClick_ability_index, 1];
+		R_ability_slot_sprite = other.player_abilities[# other.RClick_ability_index, 1];
+	}
+	
+	
+//Combat System
 if(player_can_control == true){
+	
+	if(mouse_wheel_up()){
+		LClick_ability_index += 1;
+	}
+	if(mouse_wheel_down()){
+		LClick_ability_index -= 1;
+	}
+	LClick_ability_index = clamp(LClick_ability_index, 1, ds_grid_width(player_abilities) - 1);	//	Maintain number between 1 (as first entry in ds_grid is "None")
 	
 			//LMouse Button Attack
 	if(mouse_check_button_pressed(combat_input_primary)){

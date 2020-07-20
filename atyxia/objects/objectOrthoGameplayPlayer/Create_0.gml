@@ -149,11 +149,19 @@ player_abilities = ds_grid_create(1,1);
 
 	//	No ability - placeholder if nothing is equipped to slot
 ds_grid_set(player_abilities, 0, 0, "None");
-	
+ds_grid_set(player_abilities, 0, 1, spriteGameplayItemPlaceholder);
+ds_grid_set(player_abilities, 0, 2, "Nothing");
+ds_grid_set(player_abilities, 0, 3, 0);
+ds_grid_set(player_abilities, 0, 4, 0);
+ds_grid_set(player_abilities, 0, 5, 1000);
+ds_grid_set(player_abilities, 0, 6, 0);
+ds_grid_set(player_abilities, 0, 1, noone);
+
+ds_grid_resize(player_abilities, 3, 8);	//	Resizing so that we can add two abilities to it
+
 	//	Swipe - default LClick ability 
-	ds_grid_resize(player_abilities, 3, 8);
 ds_grid_set(player_abilities, 1, 0, "Swipe");
-ds_grid_set(player_abilities, 1, 1, "spriteSwipe_inventory");
+ds_grid_set(player_abilities, 1, 1, spriteSwipe_inventory);
 ds_grid_set(player_abilities, 1, 2, "Does a light amount of damage, but is very quick");
 ds_grid_set(player_abilities, 1, 3, 0);
 ds_grid_set(player_abilities, 1, 4, 1);
@@ -162,9 +170,8 @@ ds_grid_set(player_abilities, 1, 6, 5);
 ds_grid_set(player_abilities, 1, 7, objectMeleeAbilityParent);
 
 	//	Slam - default RClick ability 
-
 ds_grid_set(player_abilities, 2, 0, "Slam");
-ds_grid_set(player_abilities, 2, 1, "spriteSlam_inventory");
+ds_grid_set(player_abilities, 2, 1, spriteSlam_inventory);
 ds_grid_set(player_abilities, 2, 2, "Does a bit of damage, but takes some time.");
 ds_grid_set(player_abilities, 2, 3, 0);
 ds_grid_set(player_abilities, 2, 4, 2);
@@ -177,6 +184,7 @@ player_gui = instance_create_layer(0, 0, "ilayer_UIObjects", objectOrthoGameplay
 //LClick_ability = player_abilities[# 1, 1];
 LClick_ability_index = 1
 RClick_ability_index = 2
+show_debug_message("player abilities size: " + string(ds_grid_width(player_abilities)));
 //image_alpha = 1;
 //sprite_set_offset(image_index, sprite_get_height(image_index), sprite_get_width(image_index) / 2);
 image_alpha = sprite_height/255;

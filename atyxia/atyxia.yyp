@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "7e59051a-38e3-4673-9af4-2e54fc9523d2",
+            "Value": {
+                "id": "df8b7837-9e6d-442f-be45-e2503fb1bf92",
+                "resourcePath": "sprites\/spriteGameplayItemPlaceholder\/spriteGameplayItemPlaceholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7e91b202-d133-42eb-80ec-935178d510a4",
             "Value": {
                 "id": "6c0dfa1a-1f89-4425-88be-bec7e5b61d07",
