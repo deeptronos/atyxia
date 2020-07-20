@@ -28,7 +28,7 @@ draw_roundrect_color_ext(namebox_x, namebox_y, (namebox_x + namebox_width), (nam
 //Draw Name
 draw_set_halign(fa_center); draw_set_valign(fa_middle);
 gpu_set_blendmode_ext(bm_dest_alpha, bm_subtract);
-draw_text_transformed_color(name_text_x, name_text_y, name, 1.5, 1.5, name_text_angle, color_secondary, color_secondary, color_secondary, color_secondary, 1);
+draw_text_transformed_color(name_text_x, name_text_y, name, global.gameSizeScale * 1.5, global.gameSizeScale * 1.5, name_text_angle, color_secondary, color_secondary, color_secondary, color_secondary, 1);
 gpu_set_blendmode(bm_normal);
 	//Reset alignment after we're done drawing
 draw_set_halign(fa_left); draw_set_valign(fa_top);
@@ -58,9 +58,9 @@ if(!pause and counter < dialogue_str_length){
 dialogue_substring = string_copy(dialogue_text_wrapped, 1, counter);
 
 	//a little shadow for us....
-draw_text_transformed_color(dialogue_text_x, dialogue_text_y + 1, dialogue_substring, 1, 1, 0, merge_color(dialogue_text_color, c_black, 0.5), merge_color(dialogue_text_color, c_black, 0.5), merge_color(dialogue_text_color, c_black, 0.5), merge_color(dialogue_text_color, c_black, 0.5), 1);
+draw_text_transformed_color(dialogue_text_x, dialogue_text_y + 1, dialogue_substring, global.gameSizeScale, global.gameSizeScale, 0, merge_color(dialogue_text_color, c_black, 0.5), merge_color(dialogue_text_color, c_black, 0.5), merge_color(dialogue_text_color, c_black, 0.5), merge_color(dialogue_text_color, c_black, 0.5), 1);
 
-draw_text_color(dialogue_text_x, dialogue_text_y, dialogue_substring, dialogue_text_color, dialogue_text_color, dialogue_text_color, dialogue_text_color, 1);
+draw_text_transformed_color(dialogue_text_x, dialogue_text_y, dialogue_substring,global.gameSizeScale, global.gameSizeScale, 0, dialogue_text_color, dialogue_text_color, dialogue_text_color, dialogue_text_color, 1);
 	
 //Draw dialogue outline
 scriptDrawRoundRectThickOutline(dialogue_text_x - x_buffer, dialogue_text_y - y_buffer, (dialogue_text_x + dialogue_text_max_width) + x_buffer, (box_y + box_height) + y_buffer, box_round_radius, box_round_radius, color_secondary, 5, 1);
