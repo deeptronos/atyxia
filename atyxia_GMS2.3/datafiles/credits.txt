@@ -1,0 +1,5 @@
+HDRIs Used in Rendering: hdrihaven.com (CC0)
+Fonts:
+	* proggyfonts.net
+	* Adobe
+Original Blur Shader Code: XorDev (with modification)

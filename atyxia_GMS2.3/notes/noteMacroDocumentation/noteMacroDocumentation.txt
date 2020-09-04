@@ -1,0 +1,3 @@
+Debug Modes:
+	* Combat - draws projectiles
+	* Scaling - draws object's coordinates, window/display dimensions, etc.
