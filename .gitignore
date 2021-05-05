@@ -1,0 +1,8 @@
+# Ignore (potentially expensive) media files - This repo is just a backup/VC for our code/project directories
+*.png
+*.jpg
+*.jpeg
+
+# MacOS automatically creates these files for browsing files in Finder
+**/.DS_Store
+.DS_Store
