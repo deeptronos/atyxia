@@ -125,6 +125,7 @@
     {"id":{"name":"shader_ztilt_sillhouette","path":"shaders/shader_ztilt_sillhouette/shader_ztilt_sillhouette.yy",},"order":2,},
     {"id":{"name":"fontPirate16noAA","path":"fonts/fontPirate16noAA/fontPirate16noAA.yy",},"order":0,},
     {"id":{"name":"fontCrisp12NoAA","path":"fonts/fontCrisp12NoAA/fontCrisp12NoAA.yy",},"order":1,},
+    {"id":{"name":"scriptNewFuncTest","path":"scripts/scriptNewFuncTest/scriptNewFuncTest.yy",},"order":17,},
     {"id":{"name":"fontCrisp12NoAA_actually12","path":"fonts/fontCrisp12NoAA_actually12/fontCrisp12NoAA_actually12.yy",},"order":2,},
     {"id":{"name":"fontDebug16","path":"fonts/fontDebug16/fontDebug16.yy",},"order":3,},
     {"id":{"name":"fontSystem12","path":"fonts/fontSystem12/fontSystem12.yy",},"order":4,},
