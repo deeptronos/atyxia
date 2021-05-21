@@ -1,11 +1,9 @@
-//Pre-2.3 Funcition Name: scriptRender_layer_master
-//Post-2.3 Function Name: scriptRender_layer_master_function
 function scriptRender_layer_master(argument0) {
-	//var renderer_object = argument0;	//Cant use layer_script_end() to execute scripts/funcs with arguments now in 2.3, so we're just statically setting the target renderer below i guess
-	var renderer_object = objectOrthoGameplayRender;
+	var renderer_object = argument0;
+
 	if event_number != 0 exit;	// runs only in GM native draw event: where tiles, backgrounds, etc render - or custom code in objects!
 
-	with(renderer_object){
+	with(objectOrthoGameplayRender){
 		switch(renderstate){
 			case RenderState.set:
 				//show_debug_message(string(renderstate));
@@ -69,7 +67,4 @@ function scriptRender_layer_master(argument0) {
 
 
 
-}
-function scriptRender_layer_master_function_test(innput){
-	return("scriptRender_layer_master_function_test can be referenced! huh ok lol :\ innput was: " + string(innput));
 }

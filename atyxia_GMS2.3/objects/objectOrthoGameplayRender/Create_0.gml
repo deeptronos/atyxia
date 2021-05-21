@@ -54,15 +54,9 @@ enum RenderState{
 renderstate = RenderState.set;	// default
 alpha_testing = true;	// having alpha_testing set below the renderer stuff was giving me issues, so I guess  I'll set it here too
 silhouette = false;	// setting this here too for the same reason as alpha_testing
-//show_debug_message("blayer layer ID: " + string(layer_get_id("blayer")));
-//show_debug_message("calling scriptRender_layer_master(objectOrthoGameplayRender): " + string(scriptRender_layer_master(objectOrthoGameplayRender)));
-	
-//layer_script_end(layer_get_id("blayer"), script_execute(scriptRender_layer_master, objectOrthoGameplayRender));	// start zbuffering after background layer has drawn and cleared the screen
-//layer_script_begin(layer_get_id("ilayer_controllers"), script_execute(scriptRender_layer_master, objectOrthoGameplayRender));	// end zbuffering before controllers run
-	//	^ had to use script_execute(ind, arg0, arg1, ...) to execute those scriptRender_layer_master functions in >=2.3 for some reason??
-	// wait nvm lol..
-layer_script_end(layer_get_id("blayer"), scriptRender_layer_master);
-layer_script_end(layer_get_id("ilayer_controllers"), scriptRender_layer_master);
+layer_script_end(layer_get_id("blayer"), scriptRender_layer_master(objectOrthoGameplayRender));	// start zbuffering after background layer has drawn and cleared the screen
+layer_script_begin(layer_get_id("ilayer_controllers"), scriptRender_layer_master(objectOrthoGameplayRender));	// end zbuffering before controllers run
+
 
 /// == Tilt Asset Layer Sprites by modifying the alpha channel == //
 tilt = true;
