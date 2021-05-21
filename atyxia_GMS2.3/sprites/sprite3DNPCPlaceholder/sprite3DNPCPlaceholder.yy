@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"6e410c04-61db-4639-b7da-5e444c112c93","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e410c04-61db-4639-b7da-5e444c112c93","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"LayerId":{"name":"9c6481cf-29e5-4174-8ad4-f0e2a5c10c9d","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"6e410c04-61db-4639-b7da-5e444c112c93","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"LayerId":{"name":"e956b2f4-0144-4492-9511-87d70aed2fd9","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"6e410c04-61db-4639-b7da-5e444c112c93","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"LayerId":{"name":"9c6481cf-29e5-4174-8ad4-f0e2a5c10c9d","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sprite3DNPCPlaceholder","path":"sprites/sprite3DNPCPlaceholder/sprite3DNPCPlaceholder.yy",},"resourceVersion":"1.0","name":"6e410c04-61db-4639-b7da-5e444c112c93","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"e956b2f4-0144-4492-9511-87d70aed2fd9","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9c6481cf-29e5-4174-8ad4-f0e2a5c10c9d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",

@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9cd216bc-33f7-4fb7-a8ea-b7a6b2086e6f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "group3DOrthoEnvironmentSprites",
     "path": "folders/Sprites/group3DOrthoEnvironmentSprites.yy",

@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7e8af192-64f6-4a6a-9c8c-c31ff1d93a4f","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":1,"opacity":100.0,"displayName":"default (2)","resourceVersion":"1.0","name":"542b9ed2-6e68-4544-999b-c5502fc9a25b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupAbilities",
     "path": "folders/Sprites/groupGameplayItemSprites/groupAbilities.yy",

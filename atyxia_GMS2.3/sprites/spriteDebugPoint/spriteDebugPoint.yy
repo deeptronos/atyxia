@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49cb24cc-111f-4c1a-b07b-e84579ee25c1","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupUIMetaSprites",
     "path": "folders/Sprites/groupUIMetaSprites.yy",

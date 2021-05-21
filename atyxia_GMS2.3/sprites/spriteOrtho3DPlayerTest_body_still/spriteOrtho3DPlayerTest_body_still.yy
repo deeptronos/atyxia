@@ -159,6 +159,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed155c7a-e306-49a5-b3b8-6838fd64fe02","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupOrtho3DPlayerTest",
     "path": "folders/Sprites/groupOrtho3DPlayerTest.yy",

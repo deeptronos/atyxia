@@ -79,6 +79,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1f3b93be-3b65-4349-bee3-d736511ada88","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupDialogueSystemSprites",
     "path": "folders/Sprites/groupDialogueSystemSprites.yy",

@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a9c794e8-f651-4529-a44a-013eada4ced8","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9c794e8-f651-4529-a44a-013eada4ced8","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"LayerId":{"name":"52091dea-b288-441b-b204-49dd828b7695","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"a9c794e8-f651-4529-a44a-013eada4ced8","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"LayerId":{"name":"cfa9c1bd-4867-4376-ab8e-10974087db3b","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a9c794e8-f651-4529-a44a-013eada4ced8","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"LayerId":{"name":"52091dea-b288-441b-b204-49dd828b7695","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spriteCombatDeathSpritePlaceholder","path":"sprites/spriteCombatDeathSpritePlaceholder/spriteCombatDeathSpritePlaceholder.yy",},"resourceVersion":"1.0","name":"a9c794e8-f651-4529-a44a-013eada4ced8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"cfa9c1bd-4867-4376-ab8e-10974087db3b","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"52091dea-b288-441b-b204-49dd828b7695","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupGameplayMetaSprites",
     "path": "folders/Sprites/groupGameplayMetaSprites.yy",
