@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"97e5d12e-feda-41f9-9990-71084c0efb30","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupGameplayRendering",
     "path": "folders/Sprites/groupUIMetaSprites/groupGameplayRendering.yy",

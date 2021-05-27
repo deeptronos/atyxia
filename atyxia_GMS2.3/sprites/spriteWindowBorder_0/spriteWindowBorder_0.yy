@@ -71,6 +71,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ef858d5-bb98-4961-9bfa-bbb2d0d1ff81","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupWindow",
     "path": "folders/Sprites/groupUIMetaSprites/groupWindow.yy",

@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ea2eb349-26aa-496e-aad5-f5d55c466019","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea2eb349-26aa-496e-aad5-f5d55c466019","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"LayerId":{"name":"4a61be0b-a217-482e-a8c3-7ac9bbc5a652","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ea2eb349-26aa-496e-aad5-f5d55c466019","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"LayerId":{"name":"c80cbd8f-4258-40f1-addf-d68cd76f1897","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"ea2eb349-26aa-496e-aad5-f5d55c466019","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"LayerId":{"name":"4a61be0b-a217-482e-a8c3-7ac9bbc5a652","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spriteGameplayItemPlaceholder","path":"sprites/spriteGameplayItemPlaceholder/spriteGameplayItemPlaceholder.yy",},"resourceVersion":"1.0","name":"ea2eb349-26aa-496e-aad5-f5d55c466019","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2)","resourceVersion":"1.0","name":"c80cbd8f-4258-40f1-addf-d68cd76f1897","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4a61be0b-a217-482e-a8c3-7ac9bbc5a652","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupGameplayItemSprites",
     "path": "folders/Sprites/groupGameplayItemSprites.yy",

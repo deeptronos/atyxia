@@ -99,6 +99,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"93cdb6e1-c16c-455a-be37-8e9af7a0017e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "group_to_walk",
     "path": "folders/Sprites/groupOrtho3DPlayerTest_RiggedAnimations/group_to_walk.yy",

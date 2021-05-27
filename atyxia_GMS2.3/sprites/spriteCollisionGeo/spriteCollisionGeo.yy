@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d9cc858-c3cd-454c-94e3-0052193222d7","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupGameplayMetaSprites",
     "path": "folders/Sprites/groupGameplayMetaSprites.yy",

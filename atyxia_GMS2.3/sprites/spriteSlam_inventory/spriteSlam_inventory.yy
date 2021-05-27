@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1e0170f1-8944-4033-b8c5-642ba1055d70","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "groupAbilities",
     "path": "folders/Sprites/groupGameplayItemSprites/groupAbilities.yy",
