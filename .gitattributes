@@ -1,0 +1,3 @@
+# Solution to GitHub mislabeling GMS-generated .yy files as Yacc, adapted from u/mstop4 on reddit/gamemaker:
+# Re-classify .yy files (for GMS 2 projects)
+*.yy linguist-language=GML
