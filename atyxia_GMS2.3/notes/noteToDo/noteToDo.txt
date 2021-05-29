@@ -1,0 +1,4 @@
+* implement normal(?)-based 2D lighting.
+	* Create tool for automatic rendering to sprite-normal generation.
+	* Tool: Laigter.
+	
