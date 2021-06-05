@@ -1,5 +1,5 @@
 function scriptMacros() {
-#macro debug_macro false	
+#macro debug_macro true	
 #macro debugMode "combat"
 #macro debug_visibility "simple"
 

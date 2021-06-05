@@ -27,7 +27,7 @@ function scriptResolutionManager() {
 									//		being squashed into a like 960 x 540 box. Therefore, if we have something
 									//		from it, like text, and we multiply its size by global.gameSizeScale,
 									//		it will be the size it would be if the GUI weren't being scaled down, and therefore,
-									//		much easier to read.
+									//		much easier to read.						
 
 	global.ScaleOffSet = 256;
 	//offSet = 1000;

@@ -26,6 +26,8 @@ show_debug_message("GameplayLayerRender");
 
 // == Shifting Layers == // Depth values are important!!
 layer_depth(layer_get_id("blayer"), 100);
+layer_depth(layer_get_id("LightingSetup"), 98); // NM Lighting Setup layer
+layer_depth(layer_get_id("Background"), 99); // NM Background layer
 
 layer_depth(layer_get_id("tiles_low"), GCD);			// one tile width (Global Cell-sized) below the ground
 layer_depth(layer_get_id("ilayer_environmental_collision"), 2);	//	objects that specify the bounds of the playable area
@@ -43,6 +45,8 @@ layer_depth(layer_get_id("ilayer_controllers"), -1000);
 layer_depth(layer_get_id("instancesUIObjects"), -998);
 layer_depth(layer_get_id("ilayer_UIObjects"), -999);
 layer_depth(layer_get_id("Dialogue"), -1001);
+
+layer_depth(layer_get_id("FinalizeRender"), -1002); // NM FinalizeRender layer
 
 //  == Layer Scripts == //
 enum RenderState{

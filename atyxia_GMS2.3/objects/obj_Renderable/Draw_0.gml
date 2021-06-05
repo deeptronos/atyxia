@@ -9,7 +9,7 @@ if (sprite_index_norm == noone)
 	spr = sprite_index_norm;
 }
 
-draw_sprite_ext(spr, image_index, x, y+z, image_xscale, image_yscale, image_angle, c_white, 1);
+draw_sprite_ext(spr, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 
 if (sprite_index_norm == noone)
 {

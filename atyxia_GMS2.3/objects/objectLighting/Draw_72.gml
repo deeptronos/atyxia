@@ -16,4 +16,3 @@ with (objectLight)
 }
 	
 NM_diffuse(1);
-

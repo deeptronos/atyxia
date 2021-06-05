@@ -3,7 +3,20 @@
 function scriptRender_layer_master(argument0) {
 	//var renderer_object = argument0;	//Cant use layer_script_end() to execute scripts/funcs with arguments now in 2.3, so we're just statically setting the target renderer below i guess
 	var renderer_object = objectOrthoGameplayRender;
-	if event_number != 0 exit;	// runs only in GM native draw event: where tiles, backgrounds, etc render - or custom code in objects!
+	//show_debug_message("Render_layer_master executed!");
+	//switch(event_number){
+	// case ev_draw_begin: show_debug_message("Render_layer_master being called from DRAW_BEGIN"); break;
+	// case ev_draw: show_debug_message("Render_layer_master being called from DRAW"); break;
+	//}
+	
+	
+	//if(event_number != 0){ // runs only in GM native draw event: where tiles, backgrounds, etc render - or custom code in objects!
+	//	show_debug_message("scriptRender_layer_master called by incorrect event!"); 
+	
+		
+	//	exit;	
+	//}
+	//show_debug_message("scriptRender_layer_master ran!");
 
 	with(renderer_object){
 		switch(renderstate){
